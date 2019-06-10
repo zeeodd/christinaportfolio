@@ -141,6 +141,7 @@ p {
 }
 
 #footer {
+  font-family: 'Playfair Display', serif;
   position: relative;
   text-align: center;
   bottom: 0;
@@ -166,11 +167,24 @@ p {
 }
 
 .courseContent {
-  padding: 0px 18px;
+  padding: 0px 0px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #E0E0E0;
+}
+
+.courseContent p {
+  padding: 18px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media only screen and (max-width: 844px) {
