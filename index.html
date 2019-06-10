@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Christina Duron</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/three.r92.min.js"></script>
+    <script src="scripts/vanta.net.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="scripts/jsnetworkx.js"></script>
+  </head>
+
+  <body>
+    <div id="network">
+      <div id="header">
+        Christina Duron
+      </div>
+      <div id="subheader">
+        Postdoctoral Research Associate I
+      </div>
+      <div id="subsubheader">
+        Department of Mathematics, The University of Arizona
+      </div>
+    </div>
+    <div id="content">
+      <div id="row1">
+        <div id="about">
+          <h2><b>About</b></h2>
+          <hr>
+          <div id="bioBlock">
+            <div id="photo"></div>
+            <p id="bio">Lorem ipsum dolor amet viral actually vice mixtape, bitters salvia sriracha VHS. Leggings pug artisan, activated charcoal intelligentsia cold-pressed hammock kombucha ramps next level PBR&B kogi 3 wolf moon poke blue bottle.</p>
+          </div>
+        </div>
+        <div id="contact">
+          <h2><b>Contact</b></h2>
+          <hr>
+          <p> Office Hours </p>
+        </div>
+        <div id="pubs">
+          <h2><b>Publications</b></h2>
+          <hr>
+          <p> Publication 1 </p>
+          <p> Publication 2 </p>
+          <p> Publication 3 </p>
+        </div>
+      </div>
+      <div id="row2">
+        <h2><b>Course Information</b></h2>
+        <hr>
+        <button class="collapsible">Course 1</button>
+        <div class="courseContent">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Course 2</button>
+        <div class="courseContent">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">Copyright © Christina Duron 2019</footer>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
