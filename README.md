@@ -1,1 +1,4 @@
 # christinaportfolio
+---
+permalink: /index.html
+---
