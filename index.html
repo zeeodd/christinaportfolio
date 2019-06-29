@@ -6,8 +6,8 @@
     <title>Christina Duron</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="styles/style.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <script src="scripts/jquery-3.3.1.js"></script>
     <script src="scripts/three.r92.min.js"></script>
     <script src="scripts/vanta.net.min.js"></script>
@@ -33,8 +33,8 @@
           <h2><b>About</b></h2>
           <hr>
           <div id="bioBlock">
-            <div id="photo"></div>
-            <p id="bio">Lorem ipsum dolor amet viral actually vice mixtape, bitters salvia sriracha VHS. Leggings pug artisan, activated charcoal intelligentsia cold-pressed hammock kombucha ramps next level PBR&B kogi 3 wolf moon poke blue bottle.</p>
+            <div><image id="photo" src="images/id.png"/></div>
+            <p id="bio">In April 2019, I received my Ph.D. in Mathematics at Claremont Graduate University. Under the supervision of Dr. Ami Radunskaya and Dr. Johanna Hardin from Pomona College, I investigated the distribution of the betweenness centrality in exponential random graph models. If you would like to know more about my background or work, check out my CV or publications.</p>
           </div>
         </div>
         <div id="contact">
@@ -53,17 +53,56 @@
       <div id="row2">
         <h2><b>Course Information</b></h2>
         <hr>
-        <button class="collapsible">Course 1</button>
+        <button class="collapsible">MATH 122A: Functions for Calculus</button>
         <div class="courseContent">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>
+            <b>Course Overview</b>
+            <br/>
+            MATH 122A is a 1-unit course that meets for three weeks, during which students will extend and reinforce their precalculus skills. This course serves as a foundation for its pair course, MATH 122B: First Semester Calculus.
+            <br/>
+            <br/>
+            <b>Assignments</b>
+            <br/>
+            <span id="courseA-W1">Week 1</span>
+            <br/>
+            <span id="courseA-W2">Week 2</span>
+            <br/>
+            <span id="courseA-W3">Week 3</span>
+            <br/>
+            <br/>
+            <b>Lecture Notes</b>
+            <br/>
+            Text
+            <br/>
+            <br/>
+            More information about this course can be found on the <a href="https://calculus.math.arizona.edu/calc1/math122a" target="_blank">official course website</a>.
+          </p>
         </div>
-        <button class="collapsible">Course 2</button>
+        <button class="collapsible">MATH 122B: First Semester Calculus</button>
         <div class="courseContent">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>
+            <b>Course Overview</b>
+            <br/>
+            MATH 122B is a 4-unit course, during which students will be challenged to develop their calculus-related understanding, problem-solving, and modeling skills.
+            <br/>
+            <br/>
+            <b>Assignments</b>
+            <br/>
+            <br/>
+            <br/>
+            <b>Lecture Notes</b>
+            <br/>
+            Text
+            <br/>
+            <br/>
+            More information about this course can be found on the <a href="https://calculus.math.arizona.edu/calc1/math122b" target="_blank">official course website</a>.
+          </p>
         </div>
       </div>
     </div>
-    <footer id="footer">Copyright © Christina Duron 2019</footer>
+    <footer id="footer" class="noselect">Copyright © Christina Duron 2019</footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src="scripts/tabletop.js"></script>
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;

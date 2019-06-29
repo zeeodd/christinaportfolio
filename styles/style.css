@@ -35,8 +35,8 @@ h2 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.8em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
   padding: 0px;
   margin: 0px;
 }
@@ -82,16 +82,15 @@ p {
   width: auto;
   margin-left: 12vw;
   margin-right: 12vw;
-  margin-bottom: 10vw;
   margin-top: 1em;
   flex-wrap: wrap;
 }
 
 #bio {
   padding-left: 20px;
-  width: 300px;
+  width: 355px;
   height: 266px;
-  text-align: justify;
+  text-align: left;
 }
 
 #pubs, #about, #contact {
@@ -147,6 +146,7 @@ p {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+  margin-top: 5vw;
 }
 
 .collapsible {
@@ -254,7 +254,7 @@ p {
     padding-top: 1em;
     width: 100%;
     height: auto;
-    text-align: justify;
+    text-align: left;
   }
 
   #footer {
