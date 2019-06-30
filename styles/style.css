@@ -72,17 +72,18 @@ p {
 #row1 {
   display: flex;
   flex-direction: row;
-  margin-left: 12vw;
-  margin-right: 12vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  height: auto;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 #row2 {
   width: auto;
-  margin-left: 12vw;
-  margin-right: 12vw;
-  margin-top: 1em;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-top: 2em;
   flex-wrap: wrap;
 }
 
@@ -91,11 +92,25 @@ p {
   width: 355px;
   height: 266px;
   text-align: left;
+  font-size: 0.9em;
 }
 
 #pubs, #about, #contact {
   display: flex;
   flex-direction: column;
+}
+
+#about {
+  width: 45%;
+}
+
+#contact {
+  width: 15%;
+}
+
+#pubs {
+  width: 30%;
+  font-size: 0.8em;
 }
 
 #bioBlock {
@@ -105,7 +120,7 @@ p {
 
 #photo {
   width: 200px;
-  height: 266px;
+  height: auto;
   background-color: lightblue;
   max-width:100%;
   max-height:100%;
@@ -178,6 +193,17 @@ p {
   padding: 18px;
 }
 
+.pdficon {
+  width: 22px;
+  height: 22px;
+  transition: 0.25s;
+}
+
+.pdficon:hover {
+  transition: 0.25s;
+  transform: scale(1.15);
+}
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -187,7 +213,7 @@ p {
   user-select: none;
 }
 
-@media only screen and (max-width: 844px) {
+@media only screen and (max-width: 1020px) {
 
   h2 {
     font-family: 'Playfair Display', serif;
@@ -236,8 +262,7 @@ p {
   }
 
   #photo {
-    width: 150px;
-    height: 200px;
+    width: 200px;
     background-color: lightblue;
     max-width:100%;
     max-height:100%;
@@ -255,10 +280,28 @@ p {
     width: 100%;
     height: auto;
     text-align: left;
+    font-size: 0.9em;
   }
 
   #footer {
     font-size: 0.8em;
     height: 2rem;
+  }
+
+  #row1 {
+    flex-direction: column;
+  }
+
+  #row2 {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+
+  #row2 h2 {
+    padding-top: 0px;
+  }
+
+  #pubs, #about, #contact {
+    width: 100%;
   }
 }
