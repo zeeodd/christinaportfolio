@@ -87,9 +87,47 @@ function showInfo(data, tabletop) {
     $("#courseB-W7").html("Week 7: " + '<a href=' + String(data["MATH 122B HOMEWORK"].elements[0].W7_PDF) + ' target="_blank">' + String(data["MATH 122B HOMEWORK"].elements[0].W7_Name) + '</a>');
   }
 
-  // ...
-  // ...
-  // ...
+  // Week 8 Homework
+  if (data["MATH 122B HOMEWORK"].elements[0].W8_Name == "" || data["MATH 122B HOMEWORK"].elements[0].W8_PDF == "") {
+    $("#courseB-W8").html("Week 8");
+  } else {
+    $("#courseB-W8").html("Week 8: " + '<a href=' + String(data["MATH 122B HOMEWORK"].elements[0].W8_PDF) + ' target="_blank">' + String(data["MATH 122B HOMEWORK"].elements[0].W8_Name) + '</a>');
+  }
+
+  // Week 9 Homework
+  if (data["MATH 122B HOMEWORK"].elements[0].W9_Name == "" || data["MATH 122B HOMEWORK"].elements[0].W9_PDF == "") {
+    $("#courseB-W9").html("Week 9");
+  } else {
+    $("#courseB-W9").html("Week 9: " + '<a href=' + String(data["MATH 122B HOMEWORK"].elements[0].W9_PDF) + ' target="_blank">' + String(data["MATH 122B HOMEWORK"].elements[0].W9_Name) + '</a>');
+  }
+
+  // Week 10 Homework
+  if (data["MATH 122B HOMEWORK"].elements[0].W10_Name == "" || data["MATH 122B HOMEWORK"].elements[0].W10_PDF == "") {
+    $("#courseB-W10").html("Week 10");
+  } else {
+    $("#courseB-W10").html("Week 10: " + '<a href=' + String(data["MATH 122B HOMEWORK"].elements[0].W10_PDF) + ' target="_blank">' + String(data["MATH 122B HOMEWORK"].elements[0].W10_Name) + '</a>');
+  }
+
+  // Week 11 Homework
+  if (data["MATH 122B HOMEWORK"].elements[0].W11_Name == "" || data["MATH 122B HOMEWORK"].elements[0].W11_PDF == "") {
+    $("#courseB-W11").html("Week 11");
+  } else {
+    $("#courseB-W11").html("Week 11: " + '<a href=' + String(data["MATH 122B HOMEWORK"].elements[0].W11_PDF) + ' target="_blank">' + String(data["MATH 122B HOMEWORK"].elements[0].W11_Name) + '</a>');
+  }
+
+  // Week 12 Homework
+  if (data["MATH 122B HOMEWORK"].elements[0].W12_Name == "" || data["MATH 122B HOMEWORK"].elements[0].W12_PDF == "") {
+    $("#courseB-W12").html("Week 12");
+  } else {
+    $("#courseB-W12").html("Week 12: " + '<a href=' + String(data["MATH 122B HOMEWORK"].elements[0].W12_PDF) + ' target="_blank">' + String(data["MATH 122B HOMEWORK"].elements[0].W12_Name) + '</a>');
+  }
+
+  // Week 13 Homework
+  if (data["MATH 122B HOMEWORK"].elements[0].W13_Name == "" || data["MATH 122B HOMEWORK"].elements[0].W13_PDF == "") {
+    $("#courseB-W13").html("Week 13");
+  } else {
+    $("#courseB-W13").html("Week 13: " + '<a href=' + String(data["MATH 122B HOMEWORK"].elements[0].W13_PDF) + ' target="_blank">' + String(data["MATH 122B HOMEWORK"].elements[0].W13_Name) + '</a>');
+  }
 
   // ***** MATH 122A HOMEWORK NOTES MANAGER ***** //
 
