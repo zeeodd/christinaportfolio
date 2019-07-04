@@ -5,7 +5,7 @@ DOCUMENT STYLING
 body {
   padding: 0px;
   overflow-x: hidden;
-  background-color: #F3F3F3;
+  background-color: #F1F1F1;
 }
 
 input:focus,
@@ -190,7 +190,7 @@ select, option {
   padding: 0px 0px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.3s ease-out;
   background-color: #E0E0E0;
 }
 
@@ -221,6 +221,28 @@ select, option {
 .noteParagraph {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+
+[tooltip]:before {
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+    transition: all 0.25s ease;
+    padding: 10px;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 1px;
+    box-shadow: 3px 3px 2px silver;
+}
+
+[tooltip]:hover:before {
+    opacity: 1;
+    background: #333;
+    margin-top: -45px;
+}
+
+[tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
 }
 
 @media only screen and (max-width: 1020px) {

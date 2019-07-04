@@ -1,20 +1,19 @@
 function loadNotes() {
 
-  // *** MATH 122A NOTES MANAGER *** //
-
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    var defaultHeight = 522;
+    var defaultHeightA = 522;
+    var defaultHeightB = 722;
     var variableHeight = 65;
   } else {
-    var defaultHeight = 347;
+    var defaultHeightA = 347;
+    var defaultHeightB = 597;
     var variableHeight = 25;
   }
 
-  // DEFAULT
-  // if (document.getElementById("courseA-Selector").selectedIndex == 0) {
-  //   $("#courseA-Notes").html("");
-  //   document.getElementById("courseA-Content").style.maxHeight = "347px";
-  // }
+  console.log("122A: ", Notes122A);
+  console.log("122B: ", Notes122B);
+
+  // ***** MATH 122A NOTES CONTROLLER ***** //
 
   // WEEK 1
   if (document.getElementById("courseA-Selector").selectedIndex == 1) {
@@ -30,9 +29,12 @@ function loadNotes() {
       }
     } // END for-loop
     if (counter == 0) {
-      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight) + "px";
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
     } else {
-      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight + variableHeight*counter) + "px";
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
     }
   } //  END WEEK 1
 
@@ -50,9 +52,12 @@ function loadNotes() {
       }
     } // END for-loop
     if (counter == 0) {
-      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight) + "px";
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
     } else {
-      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight + variableHeight*counter) + "px";
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
     }
   } // END WEEK 2
 
@@ -70,14 +75,319 @@ function loadNotes() {
       }
     } // END for-loop
     if (counter == 0) {
-      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight) + "px";
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
     } else {
-      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight + variableHeight*counter) + "px";
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
     }
   } // END WEEK 3
+
+  // ***** MATH 122B NOTES CONTROLLER ***** //
+
+  // WEEK 1
+  if (document.getElementById("courseB-Selector").selectedIndex == 1) {
+    // console.log(Notes122B.W1);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W1) {
+      if (Notes122B.W1[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W1[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 1
+
+  // WEEK 2
+  if (document.getElementById("courseB-Selector").selectedIndex == 2) {
+    // console.log(Notes122B.W2);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W2) {
+      if (Notes122B.W2[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W2[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 2
+
+  // WEEK 3
+  if (document.getElementById("courseB-Selector").selectedIndex == 3) {
+    // console.log(Notes122B.W3);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W3) {
+      if (Notes122B.W3[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W3[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 3
+
+  // WEEK 4
+  if (document.getElementById("courseB-Selector").selectedIndex == 4) {
+    // console.log(Notes122B.W4);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W4) {
+      if (Notes122B.W4[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W4[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 4
+
+  // WEEK 5
+  if (document.getElementById("courseB-Selector").selectedIndex == 5) {
+    // console.log(Notes122B.W5);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W5) {
+      if (Notes122B.W5[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W5[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 5
+
+  // WEEK 6
+  if (document.getElementById("courseB-Selector").selectedIndex == 6) {
+    // console.log(Notes122B.W6);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W6) {
+      if (Notes122B.W6[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W6[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 6
+
+  // WEEK 7
+  if (document.getElementById("courseB-Selector").selectedIndex == 7) {
+    // console.log(Notes122B.W7);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W7) {
+      if (Notes122B.W7[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W7[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 7
+
+  // WEEK 8
+  if (document.getElementById("courseB-Selector").selectedIndex == 8) {
+    // console.log(Notes122B.W8);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W8) {
+      if (Notes122B.W8[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W8[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 8
+
+  // WEEK 9
+  if (document.getElementById("courseB-Selector").selectedIndex == 9) {
+    // console.log(Notes122B.W9);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W9) {
+      if (Notes122B.W9[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W9[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 9
+
+  // WEEK 10
+  if (document.getElementById("courseB-Selector").selectedIndex == 10) {
+    // console.log(Notes122B.W10);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W10) {
+      if (Notes122B.W10[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W10[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 10
+
+  // WEEK 11
+  if (document.getElementById("courseB-Selector").selectedIndex == 11) {
+    // console.log(Notes122B.W11);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W11) {
+      if (Notes122B.W11[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W11[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 11
+
+  // WEEK 12
+  if (document.getElementById("courseB-Selector").selectedIndex == 12) {
+    // console.log(Notes122B.W12);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W12) {
+      if (Notes122B.W12[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W12[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 12
+
+  // WEEK 13
+  if (document.getElementById("courseB-Selector").selectedIndex == 13) {
+    // console.log(Notes122B.W13);
+    $("#courseB-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes122B.W13) {
+      if (Notes122B.W13[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span')
+        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W13[day]) + "<br/>";
+        document.getElementById("courseB-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
+      var newSpan = document.createElement('span')
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseB-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight*counter) + "px";
+    }
+  } //  END WEEK 13
 
 }
 
 function loadedTabletop() {
+  $("#courseInfoTitle").html("<b>Course Information</b>");
   loadNotes();
 }
