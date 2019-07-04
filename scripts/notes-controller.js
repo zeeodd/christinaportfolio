@@ -2,6 +2,14 @@ function loadNotes() {
 
   // *** MATH 122A NOTES MANAGER *** //
 
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    var defaultHeight = 522;
+    var variableHeight = 65;
+  } else {
+    var defaultHeight = 347;
+    var variableHeight = 25;
+  }
+
   // DEFAULT
   // if (document.getElementById("courseA-Selector").selectedIndex == 0) {
   //   $("#courseA-Notes").html("");
@@ -22,17 +30,9 @@ function loadNotes() {
       }
     } // END for-loop
     if (counter == 0) {
-      document.getElementById("courseA-Content").style.maxHeight = "347px";
-    } else if (counter == 1) {
-      document.getElementById("courseA-Content").style.maxHeight = "372px";
-    } else if (counter == 2) {
-      document.getElementById("courseA-Content").style.maxHeight = "397px";
-    } else if (counter == 3) {
-      document.getElementById("courseA-Content").style.maxHeight = "422px";
-    } else if (counter == 4) {
-      document.getElementById("courseA-Content").style.maxHeight = "447px";
-    } else if (counter == 5) {
-      document.getElementById("courseA-Content").style.maxHeight = "472px";
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight) + "px";
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight + variableHeight*counter) + "px";
     }
   } //  END WEEK 1
 
@@ -50,17 +50,9 @@ function loadNotes() {
       }
     } // END for-loop
     if (counter == 0) {
-      document.getElementById("courseA-Content").style.maxHeight = "347px";
-    } else if (counter == 1) {
-      document.getElementById("courseA-Content").style.maxHeight = "372px";
-    } else if (counter == 2) {
-      document.getElementById("courseA-Content").style.maxHeight = "397px";
-    } else if (counter == 3) {
-      document.getElementById("courseA-Content").style.maxHeight = "422px";
-    } else if (counter == 4) {
-      document.getElementById("courseA-Content").style.maxHeight = "447px";
-    } else if (counter == 5) {
-      document.getElementById("courseA-Content").style.maxHeight = "472px";
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight) + "px";
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight + variableHeight*counter) + "px";
     }
   } // END WEEK 2
 
@@ -78,17 +70,9 @@ function loadNotes() {
       }
     } // END for-loop
     if (counter == 0) {
-      document.getElementById("courseA-Content").style.maxHeight = "347px";
-    } else if (counter == 1) {
-      document.getElementById("courseA-Content").style.maxHeight = "372px";
-    } else if (counter == 2) {
-      document.getElementById("courseA-Content").style.maxHeight = "397px";
-    } else if (counter == 3) {
-      document.getElementById("courseA-Content").style.maxHeight = "422px";
-    } else if (counter == 4) {
-      document.getElementById("courseA-Content").style.maxHeight = "447px";
-    } else if (counter == 5) {
-      document.getElementById("courseA-Content").style.maxHeight = "472px";
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight) + "px";
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeight + variableHeight*counter) + "px";
     }
   } // END WEEK 3
 
