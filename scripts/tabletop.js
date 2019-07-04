@@ -80,6 +80,13 @@ function showInfo(data, tabletop) {
     $("#courseB-W6").html("Week 6: " + '<a href=' + String(data["MATH 122B HOMEWORK"].elements[0].W6_PDF) + ' target="_blank">' + String(data["MATH 122B HOMEWORK"].elements[0].W6_Name) + '</a>');
   }
 
+  // Week 7 Homework
+  if (data["MATH 122B HOMEWORK"].elements[0].W7_Name == "" || data["MATH 122B HOMEWORK"].elements[0].W7_PDF == "") {
+    $("#courseB-W7").html("Week 7");
+  } else {
+    $("#courseB-W7").html("Week 7: " + '<a href=' + String(data["MATH 122B HOMEWORK"].elements[0].W7_PDF) + ' target="_blank">' + String(data["MATH 122B HOMEWORK"].elements[0].W7_Name) + '</a>');
+  }
+
   // ...
   // ...
   // ...
