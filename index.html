@@ -54,7 +54,7 @@
         <h2><b>Course Information</b></h2>
         <hr>
         <button class="collapsible">MATH 122A: Functions for Calculus</button>
-        <div class="courseContent">
+        <div id="courseA-Content" class="courseContent">
           <p>
             <b>Course Overview</b>
             <br/>
@@ -71,10 +71,16 @@
             <br/>
             <br/>
             <b>Lecture Notes</b>
-            <br/>
-            Text
-            <br/>
-            <br/>
+            <select id="courseA-Selector" onchange="loadNotes()">
+              <option value="default">Select Week...</option>
+              <option value="w1">Week 1</option>
+              <option value="w2">Week 2</option>
+              <option value="w3">Week 3</option>
+            </select>
+            </br>
+            <span id="courseA-Notes"></span>
+          </p>
+          <p>
             More information about this course can be found on the <a href="https://calculus.math.arizona.edu/calc1/math122a" target="_blank">official course website</a>.
           </p>
         </div>
@@ -104,6 +110,7 @@
     <footer id="footer" class="noselect">Copyright © Christina Duron 2019</footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
     <script src="scripts/tabletop.js"></script>
+    <script src="scripts/notes-controller.js"></script>
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;
@@ -119,6 +126,7 @@
           }
         });
       }
+
     </script>
   </body>
 </html>
