@@ -5,7 +5,7 @@ DOCUMENT STYLING
 body {
   padding: 0px;
   overflow-x: hidden;
-  background-color: #F1F1F1;
+  background-color: #F0F0F0;
 }
 
 input:focus,
@@ -109,7 +109,7 @@ select, option {
 }
 
 #contact {
-  width: 15%;
+  width: 20%;
 }
 
 #pubs {
@@ -187,6 +187,7 @@ select, option {
 }
 
 .courseContent {
+  position: relative;
   padding: 0px 0px;
   max-height: 0;
   overflow: hidden;
