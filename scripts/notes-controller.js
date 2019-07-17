@@ -10,8 +10,8 @@ function loadNotes() {
     var variableHeight = 25;
   }
 
-  console.log("122A: ", Notes122A);
-  console.log("122B: ", Notes122B);
+  // console.log("122A: ", Notes122A);
+  // console.log("122B: ", Notes122B);
 
   // ***** MATH 122A NOTES CONTROLLER ***** //
 
@@ -23,14 +23,16 @@ function loadNotes() {
     for (var day in Notes122A.W1) {
       if (Notes122A.W1[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122A.W1[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122A.W1[day].split("_")[0];
+        var link = Notes122A.W1[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseA-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseA-Notes").appendChild(newSpan);
     } else {
@@ -46,14 +48,16 @@ function loadNotes() {
     for (var day in Notes122A.W2) {
       if (Notes122A.W2[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122A.W2[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122A.W2[day].split("_")[0];
+        var link = Notes122A.W2[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseA-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseA-Notes").appendChild(newSpan);
     } else {
@@ -69,14 +73,16 @@ function loadNotes() {
     for (var day in Notes122A.W3) {
       if (Notes122A.W3[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122A.W3[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122A.W3[day].split("_")[0];
+        var link = Notes122A.W3[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseA-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseA-Notes").appendChild(newSpan);
     } else {
@@ -94,14 +100,16 @@ function loadNotes() {
     for (var day in Notes122B.W1) {
       if (Notes122B.W1[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W1[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W1[day].split("_")[0];
+        var link = Notes122B.W1[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -117,14 +125,16 @@ function loadNotes() {
     for (var day in Notes122B.W2) {
       if (Notes122B.W2[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W2[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W2[day].split("_")[0];
+        var link = Notes122B.W2[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -140,14 +150,16 @@ function loadNotes() {
     for (var day in Notes122B.W3) {
       if (Notes122B.W3[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W3[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W3[day].split("_")[0];
+        var link = Notes122B.W3[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -163,14 +175,16 @@ function loadNotes() {
     for (var day in Notes122B.W4) {
       if (Notes122B.W4[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W4[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W4[day].split("_")[0];
+        var link = Notes122B.W4[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -186,14 +200,16 @@ function loadNotes() {
     for (var day in Notes122B.W5) {
       if (Notes122B.W5[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W5[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W5[day].split("_")[0];
+        var link = Notes122B.W5[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -209,14 +225,16 @@ function loadNotes() {
     for (var day in Notes122B.W6) {
       if (Notes122B.W6[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W6[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W6[day].split("_")[0];
+        var link = Notes122B.W6[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -232,14 +250,16 @@ function loadNotes() {
     for (var day in Notes122B.W7) {
       if (Notes122B.W7[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W7[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W7[day].split("_")[0];
+        var link = Notes122B.W7[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -255,14 +275,16 @@ function loadNotes() {
     for (var day in Notes122B.W8) {
       if (Notes122B.W8[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W8[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W8[day].split("_")[0];
+        var link = Notes122B.W8[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -278,14 +300,16 @@ function loadNotes() {
     for (var day in Notes122B.W9) {
       if (Notes122B.W9[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W9[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W9[day].split("_")[0];
+        var link = Notes122B.W9[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -301,14 +325,16 @@ function loadNotes() {
     for (var day in Notes122B.W10) {
       if (Notes122B.W10[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W10[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W10[day].split("_")[0];
+        var link = Notes122B.W10[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -324,14 +350,16 @@ function loadNotes() {
     for (var day in Notes122B.W11) {
       if (Notes122B.W11[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W11[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W11[day].split("_")[0];
+        var link = Notes122B.W11[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -347,14 +375,16 @@ function loadNotes() {
     for (var day in Notes122B.W12) {
       if (Notes122B.W12[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W12[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W12[day].split("_")[0];
+        var link = Notes122B.W12[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {
@@ -370,14 +400,16 @@ function loadNotes() {
     for (var day in Notes122B.W13) {
       if (Notes122B.W13[day] != "") {
         counter++;
-        var newSpan = document.createElement('span')
-        newSpan.innerHTML = String(day) + ": " + String(Notes122B.W13[day]) + "<br/>";
+        var newSpan = document.createElement('span');
+        var title = Notes122B.W13[day].split("_")[0];
+        var link = Notes122B.W13[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseB-Notes").appendChild(newSpan);
       }
     } // END for-loop
     if (counter == 0) {
       document.getElementById("courseB-Content").style.maxHeight = String(defaultHeightB + variableHeight) + "px";
-      var newSpan = document.createElement('span')
+      var newSpan = document.createElement('span');
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseB-Notes").appendChild(newSpan);
     } else {

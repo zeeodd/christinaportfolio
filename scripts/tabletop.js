@@ -189,4 +189,4 @@ function showInfo(data, tabletop) {
 
 };
 
-window.addEventListener('DOMContentLoaded', init)
+window.addEventListener('DOMContentLoaded', init);
