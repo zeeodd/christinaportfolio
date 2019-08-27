@@ -1,31 +1,31 @@
 function loadNotes() {
 
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    var defaultHeightA = 522;
+    var defaultHeightA = 797;
     var defaultHeightB = 722;
     var variableHeight = 65;
   } else {
-    var defaultHeightA = 347;
+    var defaultHeightA = 597;
     var defaultHeightB = 597;
     var variableHeight = 25;
   }
 
-  // console.log("122A: ", Notes122A);
+  // console.log("196L: ", Notes196L);
   // console.log("122B: ", Notes122B);
 
-  // ***** MATH 122A NOTES CONTROLLER ***** //
+  // ***** MATH 196L NOTES CONTROLLER ***** //
 
   // WEEK 1
   if (document.getElementById("courseA-Selector").selectedIndex == 1) {
-    // console.log(Notes122A.W1);
+    // console.log(Notes196L.W1);
     $("#courseA-Notes").html(""); // clear current html
     var counter = 0;
-    for (var day in Notes122A.W1) {
-      if (Notes122A.W1[day] != "") {
+    for (var day in Notes196L.W1) {
+      if (Notes196L.W1[day] != "") {
         counter++;
         var newSpan = document.createElement('span');
-        var title = Notes122A.W1[day].split("_")[0];
-        var link = Notes122A.W1[day].split("_")[1];
+        var title = Notes196L.W1[day].split("_")[0];
+        var link = Notes196L.W1[day].split("_")[1];
         newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseA-Notes").appendChild(newSpan);
       }
@@ -42,15 +42,15 @@ function loadNotes() {
 
   // WEEK 2
   if (document.getElementById("courseA-Selector").selectedIndex == 2) {
-    console.log(Notes122A.W2);
+    console.log(Notes196L.W2);
     $("#courseA-Notes").html(""); // clear current html
     var counter = 0;
-    for (var day in Notes122A.W2) {
-      if (Notes122A.W2[day] != "") {
+    for (var day in Notes196L.W2) {
+      if (Notes196L.W2[day] != "") {
         counter++;
         var newSpan = document.createElement('span');
-        var title = Notes122A.W2[day].split("_")[0];
-        var link = Notes122A.W2[day].split("_")[1];
+        var title = Notes196L.W2[day].split("_")[0];
+        var link = Notes196L.W2[day].split("_")[1];
         newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseA-Notes").appendChild(newSpan);
       }
@@ -67,15 +67,15 @@ function loadNotes() {
 
   // WEEK 3
   if (document.getElementById("courseA-Selector").selectedIndex == 3) {
-    // console.log(Notes122A.W3);
+    // console.log(Notes196L.W3);
     $("#courseA-Notes").html(""); // clear current html
     var counter = 0;
-    for (var day in Notes122A.W3) {
-      if (Notes122A.W3[day] != "") {
+    for (var day in Notes196L.W3) {
+      if (Notes196L.W3[day] != "") {
         counter++;
         var newSpan = document.createElement('span');
-        var title = Notes122A.W3[day].split("_")[0];
-        var link = Notes122A.W3[day].split("_")[1];
+        var title = Notes196L.W3[day].split("_")[0];
+        var link = Notes196L.W3[day].split("_")[1];
         newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseA-Notes").appendChild(newSpan);
       }
@@ -89,6 +89,256 @@ function loadNotes() {
       document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
     }
   } // END WEEK 3
+
+  // WEEK 4
+  if (document.getElementById("courseA-Selector").selectedIndex == 4) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W4) {
+      if (Notes196L.W4[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W4[day].split("_")[0];
+        var link = Notes196L.W4[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 4
+
+  // WEEK 5
+  if (document.getElementById("courseA-Selector").selectedIndex == 5) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W5) {
+      if (Notes196L.W5[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W5[day].split("_")[0];
+        var link = Notes196L.W5[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 5
+
+  // WEEK 6
+  if (document.getElementById("courseA-Selector").selectedIndex == 6) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W6) {
+      if (Notes196L.W6[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W6[day].split("_")[0];
+        var link = Notes196L.W6[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 6
+
+  // WEEK 7
+  if (document.getElementById("courseA-Selector").selectedIndex == 7) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W7) {
+      if (Notes196L.W7[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W7[day].split("_")[0];
+        var link = Notes196L.W7[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 7
+
+  // WEEK 8
+  if (document.getElementById("courseA-Selector").selectedIndex == 8) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W8) {
+      if (Notes196L.W8[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W8[day].split("_")[0];
+        var link = Notes196L.W8[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 8
+
+  // WEEK 9
+  if (document.getElementById("courseA-Selector").selectedIndex == 9) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W9) {
+      if (Notes196L.W9[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W9[day].split("_")[0];
+        var link = Notes196L.W9[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 9
+
+  // WEEK 10
+  if (document.getElementById("courseA-Selector").selectedIndex == 10) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W10) {
+      if (Notes196L.W10[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W10[day].split("_")[0];
+        var link = Notes196L.W10[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 10
+
+  // WEEK 11
+  if (document.getElementById("courseA-Selector").selectedIndex == 11) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W11) {
+      if (Notes196L.W11[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W11[day].split("_")[0];
+        var link = Notes196L.W11[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 11
+
+  // WEEK 12
+  if (document.getElementById("courseA-Selector").selectedIndex == 12) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W12) {
+      if (Notes196L.W12[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W12[day].split("_")[0];
+        var link = Notes196L.W12[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 12
+
+  // WEEK 13
+  if (document.getElementById("courseA-Selector").selectedIndex == 13) {
+    // console.log(Notes196L.W3);
+    $("#courseA-Notes").html(""); // clear current html
+    var counter = 0;
+    for (var day in Notes196L.W13) {
+      if (Notes196L.W13[day] != "") {
+        counter++;
+        var newSpan = document.createElement('span');
+        var title = Notes196L.W13[day].split("_")[0];
+        var link = Notes196L.W13[day].split("_")[1];
+        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseA-Notes").appendChild(newSpan);
+      }
+    } // END for-loop
+    if (counter == 0) {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight) + "px";
+      var newSpan = document.createElement('span');
+      newSpan.innerHTML = "Nothing yet.";
+      document.getElementById("courseA-Notes").appendChild(newSpan);
+    } else {
+      document.getElementById("courseA-Content").style.maxHeight = String(defaultHeightA + variableHeight*counter) + "px";
+    }
+  } // END WEEK 13
 
   // ***** MATH 122B NOTES CONTROLLER ***** //
 

@@ -366,16 +366,16 @@ MOBILE STYLING
     flex-direction: column;
   }
 
-  #row3 {
+  #row2 {
     flex-direction: column;
     margin-top: 1em;
   }
 
-  #row3 h2 {
+  #row2 h2 {
     padding-top: 0px;
   }
 
-  #row2 h2 {
+  #row3 h2 {
     padding-top: 0px;
   }
 
