@@ -13,6 +13,16 @@ const WEEKS122B = 13;
 
 function showInfo(data, tabletop) {
 
+  // ***** ANNOUNCEMENTS CONTROLLER ***** //
+
+  console.log(data)
+
+  if (data["ANNOUNCEMENTS"].elements[0].Announcement == "None") {
+    $("#announcementBody").html("Nothing yet.");
+  } else {
+    $("#announcementBody").html(String(data["ANNOUNCEMENTS"].elements[0].Announcement));
+  }
+
   // ***** MATH 196L HOMEWORK CONTROLLER ***** //
 
   // Week 1 Homework

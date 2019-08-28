@@ -212,6 +212,10 @@ FOOTER STYLING
 COURSES STYLING
 ******************/
 
+#announcementHeader, #announcementBody {
+  color: #F14242;
+}
+
 .collapsible {
   background-color: #404040;
   font-family: 'Playfair Display', serif;

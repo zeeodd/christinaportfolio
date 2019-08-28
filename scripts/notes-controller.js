@@ -2,11 +2,11 @@ function loadNotes() {
 
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     var defaultHeightA = 797;
-    var defaultHeightB = 722;
+    var defaultHeightB = 822;
     var variableHeight = 65;
   } else {
     var defaultHeightA = 597;
-    var defaultHeightB = 597;
+    var defaultHeightB = 672;
     var variableHeight = 25;
   }
 
@@ -670,6 +670,6 @@ function loadNotes() {
 }
 
 function loadedTabletop() {
-  $("#courseInfoTitle").html("<b>Course Information</b>");
+  $("#courseInfoTitle").html("<b>Fall 2019 Course Information</b>");
   loadNotes();
 }

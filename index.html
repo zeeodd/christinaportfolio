@@ -61,7 +61,7 @@
         </div>
       </div>
       <div id="row2">
-        <h2 id="courseInfoTitle"><b>Course Information (Loading...)</b></h2>
+        <h2 id="courseInfoTitle"><b>Fall 2019 Course Information (Loading...)</b></h2>
         <hr>
         <button class="collapsible">MATH 196L: Precalc Supplemental Instruction</button>
         <div id="courseA-Content" class="courseContent">
@@ -127,6 +127,11 @@
         <button class="collapsible">MATH 122B: First Semester Calculus</button>
         <div id="courseB-Content" class="courseContent">
           <p>
+            <b id="announcementHeader">Announcements</b>
+            <br/>
+            <span id="announcementBody">Nothing yet.</span>
+            <br/>
+            <br/>
             <b>Course Overview</b>
             <br/>
             MATH 122B is a 4-unit course, during which students will be challenged to develop their calculus-related understanding, problem-solving, and modeling skills.
@@ -194,11 +199,12 @@
     </div>
     <footer id="footer" class="noselect">Copyright © Christina Durón 2019</footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-    <script src="scripts/tabletop.js"></script>
-    <script src="scripts/notes-controller.js"></script>
+    <script src="scripts/tabletop.min.js"></script>
+    <script src="scripts/notes-controller.min.js"></script>
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;
+      var courseBClosed = false;
 
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
