@@ -3,10 +3,10 @@ function loadNotes() {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     var defaultHeightA = 797;
     var defaultHeightB = 822;
-    var variableHeight = 65;
+    var variableHeight = 70;
   } else {
     var defaultHeightA = 597;
-    var defaultHeightB = 672;
+    var defaultHeightB = 697;
     var variableHeight = 25;
   }
 
