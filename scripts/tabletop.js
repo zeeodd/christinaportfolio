@@ -225,7 +225,17 @@ function showInfo(data, tabletop) {
   var Notes196LCallback = {
     W1: data["MATH 196L NOTES"].elements[0],
     W2: data["MATH 196L NOTES"].elements[1],
-    W3: data["MATH 196L NOTES"].elements[2]
+    W3: data["MATH 196L NOTES"].elements[2],
+    W4: data["MATH 196L NOTES"].elements[3],
+    W5: data["MATH 196L NOTES"].elements[4],
+    W6: data["MATH 196L NOTES"].elements[5],
+    W7: data["MATH 196L NOTES"].elements[6],
+    W8: data["MATH 196L NOTES"].elements[7],
+    W9: data["MATH 196L NOTES"].elements[8],
+    W10: data["MATH 196L NOTES"].elements[9],
+    W11: data["MATH 196L NOTES"].elements[10],
+    W12: data["MATH 196L NOTES"].elements[11],
+    W13: data["MATH 196L NOTES"].elements[12]
   }
 
   Notes196L = Notes196LCallback;
@@ -255,6 +265,9 @@ function showInfo(data, tabletop) {
     W8: data["MATH 122B NOTES"].elements[7],
     W9: data["MATH 122B NOTES"].elements[8],
     W10: data["MATH 122B NOTES"].elements[9],
+    W11: data["MATH 122B NOTES"].elements[10],
+    W12: data["MATH 122B NOTES"].elements[11],
+    W13: data["MATH 122B NOTES"].elements[12],
   }
 
   Notes122B = Notes122BCallback;
