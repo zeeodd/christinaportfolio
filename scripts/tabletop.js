@@ -85,35 +85,35 @@ function showInfo(data, tabletop) {
   if (data["MATH 196L HOMEWORK"].elements[0].W9_Name == "" || data["MATH 196L HOMEWORK"].elements[0].W9_PDF == "") {
     $("#courseA-W9").html("Week 9");
   } else {
-    $("#courseA-W9").html("Week 9: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W9PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W9_Name) + '</a>');
+    $("#courseA-W9").html("Week 9: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W9_PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W9_Name) + '</a>');
   }
 
   // Week 10 Homework
   if (data["MATH 196L HOMEWORK"].elements[0].W10_Name == "" || data["MATH 196L HOMEWORK"].elements[0].W10_PDF == "") {
     $("#courseA-W10").html("Week 10");
   } else {
-    $("#courseA-W10").html("Week 10: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W10PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W10_Name) + '</a>');
+    $("#courseA-W10").html("Week 10: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W10_PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W10_Name) + '</a>');
   }
 
   // Week 11 Homework
   if (data["MATH 196L HOMEWORK"].elements[0].W11_Name == "" || data["MATH 196L HOMEWORK"].elements[0].W11_PDF == "") {
     $("#courseA-W11").html("Week 11");
   } else {
-    $("#courseA-W11").html("Week 11: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W11PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W11_Name) + '</a>');
+    $("#courseA-W11").html("Week 11: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W11_PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W11_Name) + '</a>');
   }
 
   // Week 12 Homework
   if (data["MATH 196L HOMEWORK"].elements[0].W12_Name == "" || data["MATH 196L HOMEWORK"].elements[0].W12_PDF == "") {
     $("#courseA-W12").html("Week 12");
   } else {
-    $("#courseA-W12").html("Week 12: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W12PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W12_Name) + '</a>');
+    $("#courseA-W12").html("Week 12: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W12_PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W12_Name) + '</a>');
   }
 
   // Week 13 Homework
   if (data["MATH 196L HOMEWORK"].elements[0].W13_Name == "" || data["MATH 196L HOMEWORK"].elements[0].W13_PDF == "") {
     $("#courseA-W13").html("Week 13");
   } else {
-    $("#courseA-W13").html("Week 13: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W13PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W13_Name) + '</a>');
+    $("#courseA-W13").html("Week 13: " + '<a href=' + String(data["MATH 196L HOMEWORK"].elements[0].W13_PDF) + ' target="_blank">' + String(data["MATH 196L HOMEWORK"].elements[0].W13_Name) + '</a>');
   }
 
   // ***** MATH 122B HOMEWORK CONTROLLER ***** //
