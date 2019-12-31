@@ -108,15 +108,7 @@ CONTENT STYLING
   flex-wrap: wrap;
 }
 
-#row2 {
-  width: auto;
-  margin-left: 8vw;
-  margin-right: 8vw;
-  margin-top: 2em;
-  flex-wrap: wrap;
-}
-
-#row3 {
+.below-rows {
   width: auto;
   margin-left: 8vw;
   margin-right: 8vw;
@@ -212,8 +204,12 @@ FOOTER STYLING
 COURSES STYLING
 ******************/
 
-#announcementHeader, #announcementBody {
+.announcementText {
   color: #F14242;
+}
+
+#courseInfoTitleFall {
+  margin-top: 1em;
 }
 
 .collapsible {
