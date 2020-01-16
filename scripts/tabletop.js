@@ -33,6 +33,29 @@ function showInfo(data, tabletop) {
     $("#announcementBody163").html(String(data["ANNOUNCEMENTS"].elements[0].Announcement163));
   }
 
+  // ***** EXCEL PROJECTS CONTROLLER ***** //
+
+  // EXCEL PROJECT 1
+  if (data["EXCEL PROJECTS"].elements[0].Project1 == "None") {
+    $("#excel1").html("Excel Project #1");
+  } else {
+    $("#excel1").html('<a href=' + String(data["EXCEL PROJECTS"].elements[0].Project1) + ' target="_blank">' + "Excel Project #1" + '</a>');
+  }
+
+  // EXCEL PROJECT 2
+  if (data["EXCEL PROJECTS"].elements[0].Project2 == "None") {
+    $("#excel2").html("Excel Project #2");
+  } else {
+    $("#excel2").html('<a href=' + String(data["EXCEL PROJECTS"].elements[0].Project2) + ' target="_blank">' + "Excel Project #2" + '</a>');
+  }
+
+  // EXCEL PROJECT 3
+  if (data["EXCEL PROJECTS"].elements[0].Project3 == "None") {
+    $("#excel3").html("Excel Project #3");
+  } else {
+    $("#excel3").html('<a href=' + String(data["EXCEL PROJECTS"].elements[0].Project3) + ' target="_blank">' + "Excel Project #3" + '</a>');
+  }
+
   // ***** MATH 196L HOMEWORK CONTROLLER ***** //
 
   // Week 1 Homework
