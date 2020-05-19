@@ -140,7 +140,7 @@ ABOUT STYLING
 
 #bio {
   padding-left: 20px;
-  width: 355px;
+  width: 80%;
   height: 266px;
   text-align: left;
   font-size: 0.9em;
@@ -152,7 +152,6 @@ ABOUT STYLING
 }
 
 #photo {
-  width: 200px;
   height: auto;
   background-color: lightblue;
   max-width:100%;
