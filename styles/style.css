@@ -203,6 +203,11 @@ FOOTER STYLING
 /******************
 COURSES STYLING
 ******************/
+.dateSpan {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
 
 .announcementText {
   color: #F14242;

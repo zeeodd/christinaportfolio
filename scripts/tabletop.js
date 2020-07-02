@@ -19,18 +19,11 @@ function showInfo(data, tabletop) {
 
   console.log(data);
 
-  // MATH 122B
-  if (data["ANNOUNCEMENTS"].elements[0].Announcement122B == "None") {
-    $("#announcementBody122B").html("Nothing yet.");
-  } else {
-    $("#announcementBody122B").html(String(data["ANNOUNCEMENTS"].elements[0].Announcement122B));
-  }
-
   // MATH 163
   if (data["ANNOUNCEMENTS"].elements[0].Announcement163 == "None") {
-    $("#announcementBody163").html("Nothing yet.");
+    $("#announcementBodyCurrent1").html("Nothing yet.");
   } else {
-    $("#announcementBody163").html(String(data["ANNOUNCEMENTS"].elements[0].Announcement163));
+    $("#announcementBodyCurrent1").html(String(data["ANNOUNCEMENTS"].elements[0].Announcement163));
   }
 
   // ***** EXCEL PROJECTS CONTROLLER ***** //
@@ -246,121 +239,121 @@ function showInfo(data, tabletop) {
 
   // Week 1 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W1_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W1_PDF == "") {
-    $("#courseC-W1").html("Week 1");
+    $("#courseCurrent1-W1").html("Week 1");
   } else {
-    $("#courseC-W1").html("Week 1: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W1_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W1_Name) + '</a>');
+    $("#courseCurrent1-W1").html("Week 1: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W1_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W1_Name) + '</a>');
   }
 
   // Week 2 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W2_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W2_PDF == "") {
-    $("#courseC-W2").html("Week 2");
+    $("#courseCurrent1-W2").html("Week 2");
   } else {
-    $("#courseC-W2").html("Week 2: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W2_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W2_Name) + '</a>');
+    $("#courseCurrent1-W2").html("Week 2: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W2_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W2_Name) + '</a>');
   }
 
   // Week 3 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W3_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W3_PDF == "") {
-    $("#courseC-W3").html("Week 3");
+    $("#courseCurrent1-W3").html("Week 3");
   } else {
-    $("#courseC-W3").html("Week 3: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W3_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W3_Name) + '</a>');
+    $("#courseCurrent1-W3").html("Week 3: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W3_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W3_Name) + '</a>');
   }
 
   // Week 4 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W4_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W4_PDF == "") {
-    $("#courseC-W4").html("Week 4");
+    $("#courseCurrent1-W4").html("Week 4");
   } else {
-    $("#courseC-W4").html("Week 4: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W4_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W4_Name) + '</a>');
+    $("#courseCurrent1-W4").html("Week 4: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W4_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W4_Name) + '</a>');
   }
 
   // Week 5 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W5_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W5_PDF == "") {
-    $("#courseC-W5").html("Week 5");
+    $("#courseCurrent1-W5").html("Week 5");
   } else {
-    $("#courseC-W5").html("Week 5: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W5_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W5_Name) + '</a>');
+    $("#courseCurrent1-W5").html("Week 5: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W5_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W5_Name) + '</a>');
   }
 
   // Week 6 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W6_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W6_PDF == "") {
-    $("#courseC-W6").html("Week 6");
+    $("#courseCurrent1-W6").html("Week 6");
   } else {
-    $("#courseC-W6").html("Week 6: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W6_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W6_Name) + '</a>');
+    $("#courseCurrent1-W6").html("Week 6: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W6_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W6_Name) + '</a>');
   }
 
   // Week 7 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W7_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W7_PDF == "") {
-    $("#courseC-W7").html("Week 7");
+    $("#courseCurrent1-W7").html("Week 7");
   } else {
-    $("#courseC-W7").html("Week 7: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W7_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W7_Name) + '</a>');
+    $("#courseCurrent1-W7").html("Week 7: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W7_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W7_Name) + '</a>');
   }
 
   // Week 8 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W8_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W8_PDF == "") {
-    $("#courseC-W8").html("Week 8");
+    $("#courseCurrent1-W8").html("Week 8");
   } else {
-    $("#courseC-W8").html("Week 8: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W8_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W8_Name) + '</a>');
+    $("#courseCurrent1-W8").html("Week 8: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W8_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W8_Name) + '</a>');
   }
 
   // Week 9 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W9_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W9_PDF == "") {
-    $("#courseC-W9").html("Week 9");
+    $("#courseCurrent1-W9").html("Week 9");
   } else {
-    $("#courseC-W9").html("Week 9: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W9_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W9_Name) + '</a>');
+    $("#courseCurrent1-W9").html("Week 9: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W9_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W9_Name) + '</a>');
   }
 
   // Week 10 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W10_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W10_PDF == "") {
-    $("#courseC-W10").html("Week 10");
+    $("#courseCurrent1-W10").html("Week 10");
   } else {
-    $("#courseC-W10").html("Week 10: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W10_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W10_Name) + '</a>');
+    $("#courseCurrent1-W10").html("Week 10: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W10_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W10_Name) + '</a>');
   }
 
   // Week 11 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W11_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W11_PDF == "") {
-    $("#courseC-W11").html("Week 11");
+    $("#courseCurrent1-W11").html("Week 11");
   } else {
-    $("#courseC-W11").html("Week 11: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W11_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W11_Name) + '</a>');
+    $("#courseCurrent1-W11").html("Week 11: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W11_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W11_Name) + '</a>');
   }
 
   // Week 12 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W12_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W12_PDF == "") {
-    $("#courseC-W12").html("Week 12");
+    $("#courseCurrent1-W12").html("Week 12");
   } else {
-    $("#courseC-W12").html("Week 12: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W12_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W12_Name) + '</a>');
+    $("#courseCurrent1-W12").html("Week 12: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W12_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W12_Name) + '</a>');
   }
 
   // Week 13 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W13_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W13_PDF == "") {
-    $("#courseC-W13").html("Week 13");
+    $("#courseCurrent1-W13").html("Week 13");
   } else {
-    $("#courseC-W13").html("Week 13: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W13_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W13_Name) + '</a>');
+    $("#courseCurrent1-W13").html("Week 13: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W13_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W13_Name) + '</a>');
   }
 
   // Week 14 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W14_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W14_PDF == "") {
-    $("#courseC-W14").html("Week 14");
+    $("#courseCurrent1-W14").html("Week 14");
   } else {
-    $("#courseC-W14").html("Week 14: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W14_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W14_Name) + '</a>');
+    $("#courseCurrent1-W14").html("Week 14: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W14_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W14_Name) + '</a>');
   }
 
   // Week 15 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W15_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W15_PDF == "") {
-    $("#courseC-W15").html("Week 15");
+    $("#courseCurrent1-W15").html("Week 15");
   } else {
-    $("#courseC-W15").html("Week 15: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W15_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W15_Name) + '</a>');
+    $("#courseCurrent1-W15").html("Week 15: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W15_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W15_Name) + '</a>');
   }
 
   // Week 16 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W16_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W16_PDF == "") {
-    $("#courseC-W16").html("Week 16");
+    $("#courseCurrent1-W16").html("Week 16");
   } else {
-    $("#courseC-W16").html("Week 16: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W16_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W16_Name) + '</a>');
+    $("#courseCurrent1-W16").html("Week 16: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W16_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W16_Name) + '</a>');
   }
 
   // Week 17 Homework
   if (data["MATH 163 HOMEWORK"].elements[0].W17_Name == "" || data["MATH 163 HOMEWORK"].elements[0].W17_PDF == "") {
-    $("#courseC-W17").html("Week 17");
+    $("#courseCurrent1-W17").html("Week 17");
   } else {
-    $("#courseC-W17").html("Week 17: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W17_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W17_Name) + '</a>');
+    $("#courseCurrent1-W17").html("Week 17: " + '<a href=' + String(data["MATH 163 HOMEWORK"].elements[0].W17_PDF) + ' target="_blank">' + String(data["MATH 163 HOMEWORK"].elements[0].W17_Name) + '</a>');
   }
 
   // ***** MATH 196L HOMEWORK NOTES MANAGER ***** //
