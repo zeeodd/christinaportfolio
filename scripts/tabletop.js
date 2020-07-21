@@ -28,28 +28,34 @@ function showInfo(data, tabletop) {
     $("#announcementBodyCurrent1").html(String(data["ANNOUNCEMENTS"].elements[0].Announcement129));
   }
 
+  // Current Course 2
+  if (data["ANNOUNCEMENTS"].elements[0].Announcement475A == "None") {
+    $("#announcementBodyCurrent2").html("Nothing yet.");
+  } else {
+    $("#announcementBodyCurrent2").html(String(data["ANNOUNCEMENTS"].elements[0].Announcement475A));
+  }
+
   // ***** EXCEL PROJECTS CONTROLLER ***** //
 
-  // EXCEL PROJECT 1
+  /*
   if (data["EXCEL PROJECTS"].elements[0].Project1 == "None") {
     $("#excel1").html("Excel Project #1");
   } else {
     $("#excel1").html('<a href=' + String(data["EXCEL PROJECTS"].elements[0].Project1) + ' target="_blank">' + "Excel Project #1" + '</a>');
   }
 
-  // EXCEL PROJECT 2
   if (data["EXCEL PROJECTS"].elements[0].Project2 == "None") {
     $("#excel2").html("Excel Project #2");
   } else {
     $("#excel2").html('<a href=' + String(data["EXCEL PROJECTS"].elements[0].Project2) + ' target="_blank">' + "Excel Project #2" + '</a>');
   }
 
-  // EXCEL PROJECT 3
   if (data["EXCEL PROJECTS"].elements[0].Project3 == "None") {
     $("#excel3").html("Excel Project #3");
   } else {
     $("#excel3").html('<a href=' + String(data["EXCEL PROJECTS"].elements[0].Project3) + ' target="_blank">' + "Excel Project #3" + '</a>');
   }
+  */
 
   // ***** CURRNET COURSE 1 HOMEWORK CONTROLLER ***** //
 

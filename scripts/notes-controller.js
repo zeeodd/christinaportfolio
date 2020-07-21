@@ -19,16 +19,20 @@ function loadNotes() {
 
   // WEEK 1
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 1) {
-    // console.log(NotesCurrent1.W1);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W1) {
-      if (NotesCurrent1.W1[day] != "") {
+      if (NotesCurrent1.W1[day] != "" && NotesCurrent1.W1[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W1[day].split("_")[0];
         var link = NotesCurrent1.W1[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W1[day] != "" && NotesCurrent1.W1[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W1[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -38,22 +42,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 1
 
   // WEEK 2
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 2) {
-    // console.log(NotesCurrent1.W2);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W2) {
-      if (NotesCurrent1.W2[day] != "") {
+      if (NotesCurrent1.W2[day] != "" && NotesCurrent1.W2[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W2[day].split("_")[0];
         var link = NotesCurrent1.W2[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W2[day] != "" && NotesCurrent1.W2[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W2[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -63,22 +72,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 2
 
   // WEEK 3
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 3) {
-    // console.log(Notes122B.W3);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W3) {
-      if (NotesCurrent1.W3[day] != "") {
+      if (NotesCurrent1.W3[day] != "" && NotesCurrent1.W3[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W3[day].split("_")[0];
         var link = NotesCurrent1.W3[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W3[day] != "" && NotesCurrent1.W3[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W3[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -88,22 +102,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 3
 
   // WEEK 4
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 4) {
-    // console.log(Notes122B.W4);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W4) {
-      if (NotesCurrent1.W4[day] != "") {
+      if (NotesCurrent1.W4[day] != "" && NotesCurrent1.W4[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W4[day].split("_")[0];
         var link = NotesCurrent1.W4[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W4[day] != "" && NotesCurrent1.W4[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W4[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -113,22 +132,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 4
 
   // WEEK 5
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 5) {
-    // console.log(Notes122B.W5);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W5) {
-      if (NotesCurrent1.W5[day] != "") {
+      if (NotesCurrent1.W5[day] != "" && NotesCurrent1.W5[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W5[day].split("_")[0];
         var link = NotesCurrent1.W5[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W5[day] != "" && NotesCurrent1.W5[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W5[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -138,22 +162,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 5
 
   // WEEK 6
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 6) {
-    // console.log(Notes122B.W6);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W6) {
-      if (NotesCurrent1.W6[day] != "") {
+      if (NotesCurrent1.W6[day] != "" && NotesCurrent1.W6[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W6[day].split("_")[0];
         var link = NotesCurrent1.W6[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W6[day] != "" && NotesCurrent1.W6[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W6[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -163,22 +192,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 6
 
   // WEEK 7
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 7) {
-    // console.log(Notes122B.W7);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W7) {
-      if (NotesCurrent1.W7[day] != "") {
+      if (NotesCurrent1.W7[day] != "" && NotesCurrent1.W7[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W7[day].split("_")[0];
         var link = NotesCurrent1.W7[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W7[day] != "" && NotesCurrent1.W7[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W7[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -188,22 +222,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 7
 
   // WEEK 8
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 8) {
-    // console.log(Notes122B.W8);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W8) {
-      if (NotesCurrent1.W8[day] != "") {
+      if (NotesCurrent1.W8[day] != "" && NotesCurrent1.W8[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W8[day].split("_")[0];
         var link = NotesCurrent1.W8[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W8[day] != "" && NotesCurrent1.W8[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W8[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -213,22 +252,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 8
 
   // WEEK 9
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 9) {
-    // console.log(Notes122B.W9);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W9) {
-      if (NotesCurrent1.W9[day] != "") {
+      if (NotesCurrent1.W9[day] != "" && NotesCurrent1.W9[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W9[day].split("_")[0];
         var link = NotesCurrent1.W9[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W9[day] != "" && NotesCurrent1.W9[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W9[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -238,22 +282,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 9
 
   // WEEK 10
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 10) {
-    // console.log(Notes122B.W10);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W10) {
-      if (NotesCurrent1.W10[day] != "") {
+      if (NotesCurrent1.W10[day] != "" && NotesCurrent1.W10[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W10[day].split("_")[0];
         var link = NotesCurrent1.W10[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W10[day] != "" && NotesCurrent1.W10[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W10[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -263,22 +312,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 10
 
   // WEEK 11
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 11) {
-    // console.log(Notes122B.W11);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W11) {
-      if (NotesCurrent1.W11[day] != "") {
+      if (NotesCurrent1.W11[day] != "" && NotesCurrent1.W11[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W11[day].split("_")[0];
         var link = NotesCurrent1.W11[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W11[day] != "" && NotesCurrent1.W11[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W11[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -288,22 +342,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 11
 
   // WEEK 12
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 12) {
-    // console.log(Notes122B.W12);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W12) {
-      if (NotesCurrent1.W12[day] != "") {
+      if (NotesCurrent1.W12[day] != "" && NotesCurrent1.W12[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W12[day].split("_")[0];
         var link = NotesCurrent1.W12[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W12[day] != "" && NotesCurrent1.W12[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W12[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -313,22 +372,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 12
 
   // WEEK 13
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 13) {
-    // console.log(Notes122B.W13);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W13) {
-      if (NotesCurrent1.W13[day] != "") {
+      if (NotesCurrent1.W13[day] != "" && NotesCurrent1.W13[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W13[day].split("_")[0];
         var link = NotesCurrent1.W13[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W13[day] != "" && NotesCurrent1.W13[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W13[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -338,22 +402,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 13
 
   // WEEK 14
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 14) {
-    // console.log(Notes122B.W14);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W14) {
-      if (NotesCurrent1.W14[day] != "") {
+      if (NotesCurrent1.W14[day] != "" && NotesCurrent1.W14[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W14[day].split("_")[0];
         var link = NotesCurrent1.W14[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W14[day] != "" && NotesCurrent1.W14[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W14[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -363,22 +432,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 14
 
   // WEEK 15
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 15) {
-    // console.log(Notes122B.W15);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W15) {
-      if (NotesCurrent1.W15[day] != "") {
+      if (NotesCurrent1.W15[day] != "" && NotesCurrent1.W15[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W15[day].split("_")[0];
         var link = NotesCurrent1.W15[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W15[day] != "" && NotesCurrent1.W15[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W15[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -388,22 +462,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 15
 
   // WEEK 16
   if (document.getElementById("courseCurrent1-Selector").selectedIndex == 16) {
-    // console.log(Notes122B.W16);
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W16) {
-      if (NotesCurrent1.W16[day] != "") {
+      if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent1.W16[day].split("_")[0];
         var link = NotesCurrent1.W16[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+      } else if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W16[day] + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -413,6 +492,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 16
@@ -421,16 +501,20 @@ function loadNotes() {
 
   // WEEK 1
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 1) {
-    // console.log(NotesCurrent2.W1);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W1) {
-      if (NotesCurrent2.W1[day] != "") {
+      if (NotesCurrent2.W1[day] != "" && NotesCurrent2.W1[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W1[day].split("_")[0];
         var link = NotesCurrent2.W1[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W1[day] != "" && NotesCurrent2.W1[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W1[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -440,22 +524,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 1
 
   // WEEK 2
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 2) {
-    // console.log(NotesCurrent2.W2);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W2) {
-      if (NotesCurrent2.W2[day] != "") {
+      if (NotesCurrent2.W2[day] != "" && NotesCurrent2.W2[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W2[day].split("_")[0];
         var link = NotesCurrent2.W2[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W2[day] != "" && NotesCurrent2.W2[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W2[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -465,22 +554,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 2
 
   // WEEK 3
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 3) {
-    // console.log(Notes122B.W3);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W3) {
-      if (NotesCurrent2.W3[day] != "") {
+      if (NotesCurrent2.W3[day] != "" && NotesCurrent2.W3[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W3[day].split("_")[0];
         var link = NotesCurrent2.W3[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W3[day] != "" && NotesCurrent2.W3[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W3[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -490,22 +584,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 3
 
   // WEEK 4
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 4) {
-    // console.log(Notes122B.W4);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W4) {
-      if (NotesCurrent2.W4[day] != "") {
+      if (NotesCurrent2.W4[day] != "" && NotesCurrent2.W4[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W4[day].split("_")[0];
         var link = NotesCurrent2.W4[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W4[day] != "" && NotesCurrent2.W4[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W4[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -515,22 +614,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 4
 
   // WEEK 5
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 5) {
-    // console.log(Notes122B.W5);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W5) {
-      if (NotesCurrent2.W5[day] != "") {
+      if (NotesCurrent2.W5[day] != "" && NotesCurrent2.W5[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W5[day].split("_")[0];
         var link = NotesCurrent2.W5[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W5[day] != "" && NotesCurrent2.W5[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W5[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -540,22 +644,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 5
 
   // WEEK 6
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 6) {
-    // console.log(Notes122B.W6);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W6) {
-      if (NotesCurrent2.W6[day] != "") {
+      if (NotesCurrent2.W6[day] != "" && NotesCurrent2.W6[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W6[day].split("_")[0];
         var link = NotesCurrent2.W6[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W6[day] != "" && NotesCurrent2.W6[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W6[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -565,22 +674,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 6
 
   // WEEK 7
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 7) {
-    // console.log(Notes122B.W7);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W7) {
-      if (NotesCurrent2.W7[day] != "") {
+      if (NotesCurrent2.W7[day] != "" && NotesCurrent2.W7[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W7[day].split("_")[0];
         var link = NotesCurrent2.W7[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W7[day] != "" && NotesCurrent2.W7[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W7[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -590,22 +704,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 7
 
   // WEEK 8
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 8) {
-    // console.log(Notes122B.W8);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W8) {
-      if (NotesCurrent2.W8[day] != "") {
+      if (NotesCurrent2.W8[day] != "" && NotesCurrent2.W8[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W8[day].split("_")[0];
         var link = NotesCurrent2.W8[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W8[day] != "" && NotesCurrent2.W8[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W8[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -615,22 +734,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 8
 
   // WEEK 9
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 9) {
-    // console.log(Notes122B.W9);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W9) {
-      if (NotesCurrent2.W9[day] != "") {
+      if (NotesCurrent2.W9[day] != "" && NotesCurrent2.W9[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W9[day].split("_")[0];
         var link = NotesCurrent2.W9[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W9[day] != "" && NotesCurrent2.W9[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W9[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -640,22 +764,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 9
 
   // WEEK 10
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 10) {
-    // console.log(Notes122B.W10);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W10) {
-      if (NotesCurrent2.W10[day] != "") {
+      if (NotesCurrent2.W10[day] != "" && NotesCurrent2.W10[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W10[day].split("_")[0];
         var link = NotesCurrent2.W10[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W10[day] != "" && NotesCurrent2.W10[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W10[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -665,22 +794,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 10
 
   // WEEK 11
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 11) {
-    // console.log(Notes122B.W11);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W11) {
-      if (NotesCurrent2.W11[day] != "") {
+      if (NotesCurrent2.W11[day] != "" && NotesCurrent2.W11[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W11[day].split("_")[0];
         var link = NotesCurrent2.W11[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W11[day] != "" && NotesCurrent2.W11[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W11[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -690,22 +824,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 11
 
   // WEEK 12
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 12) {
-    // console.log(Notes122B.W12);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W12) {
-      if (NotesCurrent2.W12[day] != "") {
+      if (NotesCurrent2.W12[day] != "" && NotesCurrent2.W12[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W12[day].split("_")[0];
         var link = NotesCurrent2.W12[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W12[day] != "" && NotesCurrent2.W12[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W12[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -715,22 +854,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 12
 
   // WEEK 13
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 13) {
-    // console.log(Notes122B.W13);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W13) {
-      if (NotesCurrent2.W13[day] != "") {
+      if (NotesCurrent2.W13[day] != "" && NotesCurrent2.W13[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W13[day].split("_")[0];
         var link = NotesCurrent2.W13[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W13[day] != "" && NotesCurrent2.W13[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W13[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -740,22 +884,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 13
 
   // WEEK 14
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 14) {
-    // console.log(Notes122B.W14);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W14) {
-      if (NotesCurrent2.W14[day] != "") {
+      if (NotesCurrent2.W14[day] != "" && NotesCurrent2.W14[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W14[day].split("_")[0];
         var link = NotesCurrent2.W14[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W14[day] != "" && NotesCurrent2.W14[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W14[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -765,22 +914,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 14
 
   // WEEK 15
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 15) {
-    // console.log(Notes122B.W15);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W15) {
-      if (NotesCurrent2.W15[day] != "") {
+      if (NotesCurrent2.W15[day] != "" && NotesCurrent2.W15[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W15[day].split("_")[0];
         var link = NotesCurrent2.W15[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W15[day] != "" && NotesCurrent2.W15[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W15[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -790,22 +944,27 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 15
 
   // WEEK 16
   if (document.getElementById("courseCurrent2-Selector").selectedIndex == 16) {
-    // console.log(Notes122B.W16);
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W16) {
-      if (NotesCurrent2.W16[day] != "") {
+      if (NotesCurrent2.W16[day] != "" && NotesCurrent2.W16[day].indexOf("_") != -1) {
         counter++;
         var newSpan = document.createElement('span');
         var title = NotesCurrent2.W16[day].split("_")[0];
         var link = NotesCurrent2.W16[day].split("_")[1];
-        newSpan.innerHTML = String(day) + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+        document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
+      } else if (NotesCurrent2.W16[day] != "" && NotesCurrent2.W16[day].indexOf("_") == -1) {
+        counter++;
+        var newSpan = document.createElement('span');
+        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W16[day] + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
       }
     } // END for-loop
@@ -815,6 +974,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
     } else {
+      console.log(counter)
       document.getElementById("courseCurrent2-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 16
