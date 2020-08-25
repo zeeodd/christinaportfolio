@@ -22,14 +22,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W1) {
-      if (NotesCurrent1.W1[day] != "" && NotesCurrent1.W1[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W1[day] != "" && NotesCurrent1.W1[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W1[day].split("_")[0];
-        var link = NotesCurrent1.W1[day].split("_")[1];
+        var title = NotesCurrent1.W1[day].split("+")[0];
+        var link = NotesCurrent1.W1[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W1[day] != "" && NotesCurrent1.W1[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W1[day] != "" && NotesCurrent1.W1[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W1[day] + "<br/>";
@@ -52,14 +52,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W2) {
-      if (NotesCurrent1.W2[day] != "" && NotesCurrent1.W2[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W2[day] != "" && NotesCurrent1.W2[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W2[day].split("_")[0];
-        var link = NotesCurrent1.W2[day].split("_")[1];
+        var title = NotesCurrent1.W2[day].split("+")[0];
+        var link = NotesCurrent1.W2[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W2[day] != "" && NotesCurrent1.W2[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W2[day] != "" && NotesCurrent1.W2[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W2[day] + "<br/>";
@@ -82,14 +82,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W3) {
-      if (NotesCurrent1.W3[day] != "" && NotesCurrent1.W3[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W3[day] != "" && NotesCurrent1.W3[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W3[day].split("_")[0];
-        var link = NotesCurrent1.W3[day].split("_")[1];
+        var title = NotesCurrent1.W3[day].split("+")[0];
+        var link = NotesCurrent1.W3[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W3[day] != "" && NotesCurrent1.W3[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W3[day] != "" && NotesCurrent1.W3[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W3[day] + "<br/>";
@@ -112,14 +112,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W4) {
-      if (NotesCurrent1.W4[day] != "" && NotesCurrent1.W4[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W4[day] != "" && NotesCurrent1.W4[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W4[day].split("_")[0];
-        var link = NotesCurrent1.W4[day].split("_")[1];
+        var title = NotesCurrent1.W4[day].split("+")[0];
+        var link = NotesCurrent1.W4[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W4[day] != "" && NotesCurrent1.W4[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W4[day] != "" && NotesCurrent1.W4[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W4[day] + "<br/>";
@@ -142,14 +142,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W5) {
-      if (NotesCurrent1.W5[day] != "" && NotesCurrent1.W5[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W5[day] != "" && NotesCurrent1.W5[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W5[day].split("_")[0];
-        var link = NotesCurrent1.W5[day].split("_")[1];
+        var title = NotesCurrent1.W5[day].split("+")[0];
+        var link = NotesCurrent1.W5[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W5[day] != "" && NotesCurrent1.W5[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W5[day] != "" && NotesCurrent1.W5[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W5[day] + "<br/>";
@@ -172,14 +172,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W6) {
-      if (NotesCurrent1.W6[day] != "" && NotesCurrent1.W6[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W6[day] != "" && NotesCurrent1.W6[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W6[day].split("_")[0];
-        var link = NotesCurrent1.W6[day].split("_")[1];
+        var title = NotesCurrent1.W6[day].split("+")[0];
+        var link = NotesCurrent1.W6[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W6[day] != "" && NotesCurrent1.W6[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W6[day] != "" && NotesCurrent1.W6[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W6[day] + "<br/>";
@@ -202,14 +202,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W7) {
-      if (NotesCurrent1.W7[day] != "" && NotesCurrent1.W7[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W7[day] != "" && NotesCurrent1.W7[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W7[day].split("_")[0];
-        var link = NotesCurrent1.W7[day].split("_")[1];
+        var title = NotesCurrent1.W7[day].split("+")[0];
+        var link = NotesCurrent1.W7[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W7[day] != "" && NotesCurrent1.W7[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W7[day] != "" && NotesCurrent1.W7[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W7[day] + "<br/>";
@@ -232,14 +232,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W8) {
-      if (NotesCurrent1.W8[day] != "" && NotesCurrent1.W8[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W8[day] != "" && NotesCurrent1.W8[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W8[day].split("_")[0];
-        var link = NotesCurrent1.W8[day].split("_")[1];
+        var title = NotesCurrent1.W8[day].split("+")[0];
+        var link = NotesCurrent1.W8[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W8[day] != "" && NotesCurrent1.W8[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W8[day] != "" && NotesCurrent1.W8[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W8[day] + "<br/>";
@@ -262,14 +262,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W9) {
-      if (NotesCurrent1.W9[day] != "" && NotesCurrent1.W9[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W9[day] != "" && NotesCurrent1.W9[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W9[day].split("_")[0];
-        var link = NotesCurrent1.W9[day].split("_")[1];
+        var title = NotesCurrent1.W9[day].split("+")[0];
+        var link = NotesCurrent1.W9[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W9[day] != "" && NotesCurrent1.W9[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W9[day] != "" && NotesCurrent1.W9[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W9[day] + "<br/>";
@@ -292,14 +292,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W10) {
-      if (NotesCurrent1.W10[day] != "" && NotesCurrent1.W10[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W10[day] != "" && NotesCurrent1.W10[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W10[day].split("_")[0];
-        var link = NotesCurrent1.W10[day].split("_")[1];
+        var title = NotesCurrent1.W10[day].split("+")[0];
+        var link = NotesCurrent1.W10[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W10[day] != "" && NotesCurrent1.W10[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W10[day] != "" && NotesCurrent1.W10[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W10[day] + "<br/>";
@@ -322,14 +322,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W11) {
-      if (NotesCurrent1.W11[day] != "" && NotesCurrent1.W11[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W11[day] != "" && NotesCurrent1.W11[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W11[day].split("_")[0];
-        var link = NotesCurrent1.W11[day].split("_")[1];
+        var title = NotesCurrent1.W11[day].split("+")[0];
+        var link = NotesCurrent1.W11[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W11[day] != "" && NotesCurrent1.W11[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W11[day] != "" && NotesCurrent1.W11[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W11[day] + "<br/>";
@@ -352,14 +352,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W12) {
-      if (NotesCurrent1.W12[day] != "" && NotesCurrent1.W12[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W12[day] != "" && NotesCurrent1.W12[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W12[day].split("_")[0];
-        var link = NotesCurrent1.W12[day].split("_")[1];
+        var title = NotesCurrent1.W12[day].split("+")[0];
+        var link = NotesCurrent1.W12[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W12[day] != "" && NotesCurrent1.W12[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W12[day] != "" && NotesCurrent1.W12[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W12[day] + "<br/>";
@@ -382,14 +382,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W13) {
-      if (NotesCurrent1.W13[day] != "" && NotesCurrent1.W13[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W13[day] != "" && NotesCurrent1.W13[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W13[day].split("_")[0];
-        var link = NotesCurrent1.W13[day].split("_")[1];
+        var title = NotesCurrent1.W13[day].split("+")[0];
+        var link = NotesCurrent1.W13[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W13[day] != "" && NotesCurrent1.W13[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W13[day] != "" && NotesCurrent1.W13[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W13[day] + "<br/>";
@@ -412,14 +412,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W14) {
-      if (NotesCurrent1.W14[day] != "" && NotesCurrent1.W14[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W14[day] != "" && NotesCurrent1.W14[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W14[day].split("_")[0];
-        var link = NotesCurrent1.W14[day].split("_")[1];
+        var title = NotesCurrent1.W14[day].split("+")[0];
+        var link = NotesCurrent1.W14[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W14[day] != "" && NotesCurrent1.W14[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W14[day] != "" && NotesCurrent1.W14[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W14[day] + "<br/>";
@@ -442,14 +442,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W15) {
-      if (NotesCurrent1.W15[day] != "" && NotesCurrent1.W15[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W15[day] != "" && NotesCurrent1.W15[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W15[day].split("_")[0];
-        var link = NotesCurrent1.W15[day].split("_")[1];
+        var title = NotesCurrent1.W15[day].split("+")[0];
+        var link = NotesCurrent1.W15[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W15[day] != "" && NotesCurrent1.W15[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W15[day] != "" && NotesCurrent1.W15[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W15[day] + "<br/>";
@@ -472,14 +472,14 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W16) {
-      if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("_") != -1) {
+      if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W16[day].split("_")[0];
-        var link = NotesCurrent1.W16[day].split("_")[1];
+        var title = NotesCurrent1.W16[day].split("+")[0];
+        var link = NotesCurrent1.W16[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("_") == -1) {
+      } else if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W16[day] + "<br/>";
@@ -504,14 +504,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W1) {
-      if (NotesCurrent2.W1[day] != "" && NotesCurrent2.W1[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W1[day] != "" && NotesCurrent2.W1[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W1[day].split("_")[0];
-        var link = NotesCurrent2.W1[day].split("_")[1];
+        var title = NotesCurrent2.W1[day].split("+")[0];
+        var link = NotesCurrent2.W1[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W1[day] != "" && NotesCurrent2.W1[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W1[day] != "" && NotesCurrent2.W1[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W1[day] + "<br/>";
@@ -534,14 +534,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W2) {
-      if (NotesCurrent2.W2[day] != "" && NotesCurrent2.W2[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W2[day] != "" && NotesCurrent2.W2[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W2[day].split("_")[0];
-        var link = NotesCurrent2.W2[day].split("_")[1];
+        var title = NotesCurrent2.W2[day].split("+")[0];
+        var link = NotesCurrent2.W2[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W2[day] != "" && NotesCurrent2.W2[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W2[day] != "" && NotesCurrent2.W2[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W2[day] + "<br/>";
@@ -564,14 +564,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W3) {
-      if (NotesCurrent2.W3[day] != "" && NotesCurrent2.W3[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W3[day] != "" && NotesCurrent2.W3[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W3[day].split("_")[0];
-        var link = NotesCurrent2.W3[day].split("_")[1];
+        var title = NotesCurrent2.W3[day].split("+")[0];
+        var link = NotesCurrent2.W3[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W3[day] != "" && NotesCurrent2.W3[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W3[day] != "" && NotesCurrent2.W3[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W3[day] + "<br/>";
@@ -594,14 +594,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W4) {
-      if (NotesCurrent2.W4[day] != "" && NotesCurrent2.W4[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W4[day] != "" && NotesCurrent2.W4[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W4[day].split("_")[0];
-        var link = NotesCurrent2.W4[day].split("_")[1];
+        var title = NotesCurrent2.W4[day].split("+")[0];
+        var link = NotesCurrent2.W4[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W4[day] != "" && NotesCurrent2.W4[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W4[day] != "" && NotesCurrent2.W4[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W4[day] + "<br/>";
@@ -624,14 +624,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W5) {
-      if (NotesCurrent2.W5[day] != "" && NotesCurrent2.W5[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W5[day] != "" && NotesCurrent2.W5[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W5[day].split("_")[0];
-        var link = NotesCurrent2.W5[day].split("_")[1];
+        var title = NotesCurrent2.W5[day].split("+")[0];
+        var link = NotesCurrent2.W5[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W5[day] != "" && NotesCurrent2.W5[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W5[day] != "" && NotesCurrent2.W5[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W5[day] + "<br/>";
@@ -654,14 +654,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W6) {
-      if (NotesCurrent2.W6[day] != "" && NotesCurrent2.W6[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W6[day] != "" && NotesCurrent2.W6[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W6[day].split("_")[0];
-        var link = NotesCurrent2.W6[day].split("_")[1];
+        var title = NotesCurrent2.W6[day].split("+")[0];
+        var link = NotesCurrent2.W6[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W6[day] != "" && NotesCurrent2.W6[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W6[day] != "" && NotesCurrent2.W6[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W6[day] + "<br/>";
@@ -684,14 +684,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W7) {
-      if (NotesCurrent2.W7[day] != "" && NotesCurrent2.W7[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W7[day] != "" && NotesCurrent2.W7[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W7[day].split("_")[0];
-        var link = NotesCurrent2.W7[day].split("_")[1];
+        var title = NotesCurrent2.W7[day].split("+")[0];
+        var link = NotesCurrent2.W7[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W7[day] != "" && NotesCurrent2.W7[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W7[day] != "" && NotesCurrent2.W7[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W7[day] + "<br/>";
@@ -714,14 +714,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W8) {
-      if (NotesCurrent2.W8[day] != "" && NotesCurrent2.W8[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W8[day] != "" && NotesCurrent2.W8[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W8[day].split("_")[0];
-        var link = NotesCurrent2.W8[day].split("_")[1];
+        var title = NotesCurrent2.W8[day].split("+")[0];
+        var link = NotesCurrent2.W8[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W8[day] != "" && NotesCurrent2.W8[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W8[day] != "" && NotesCurrent2.W8[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W8[day] + "<br/>";
@@ -744,14 +744,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W9) {
-      if (NotesCurrent2.W9[day] != "" && NotesCurrent2.W9[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W9[day] != "" && NotesCurrent2.W9[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W9[day].split("_")[0];
-        var link = NotesCurrent2.W9[day].split("_")[1];
+        var title = NotesCurrent2.W9[day].split("+")[0];
+        var link = NotesCurrent2.W9[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W9[day] != "" && NotesCurrent2.W9[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W9[day] != "" && NotesCurrent2.W9[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W9[day] + "<br/>";
@@ -774,14 +774,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W10) {
-      if (NotesCurrent2.W10[day] != "" && NotesCurrent2.W10[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W10[day] != "" && NotesCurrent2.W10[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W10[day].split("_")[0];
-        var link = NotesCurrent2.W10[day].split("_")[1];
+        var title = NotesCurrent2.W10[day].split("+")[0];
+        var link = NotesCurrent2.W10[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W10[day] != "" && NotesCurrent2.W10[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W10[day] != "" && NotesCurrent2.W10[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W10[day] + "<br/>";
@@ -804,14 +804,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W11) {
-      if (NotesCurrent2.W11[day] != "" && NotesCurrent2.W11[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W11[day] != "" && NotesCurrent2.W11[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W11[day].split("_")[0];
-        var link = NotesCurrent2.W11[day].split("_")[1];
+        var title = NotesCurrent2.W11[day].split("+")[0];
+        var link = NotesCurrent2.W11[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W11[day] != "" && NotesCurrent2.W11[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W11[day] != "" && NotesCurrent2.W11[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W11[day] + "<br/>";
@@ -834,14 +834,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W12) {
-      if (NotesCurrent2.W12[day] != "" && NotesCurrent2.W12[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W12[day] != "" && NotesCurrent2.W12[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W12[day].split("_")[0];
-        var link = NotesCurrent2.W12[day].split("_")[1];
+        var title = NotesCurrent2.W12[day].split("+")[0];
+        var link = NotesCurrent2.W12[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W12[day] != "" && NotesCurrent2.W12[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W12[day] != "" && NotesCurrent2.W12[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W12[day] + "<br/>";
@@ -864,14 +864,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W13) {
-      if (NotesCurrent2.W13[day] != "" && NotesCurrent2.W13[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W13[day] != "" && NotesCurrent2.W13[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W13[day].split("_")[0];
-        var link = NotesCurrent2.W13[day].split("_")[1];
+        var title = NotesCurrent2.W13[day].split("+")[0];
+        var link = NotesCurrent2.W13[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W13[day] != "" && NotesCurrent2.W13[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W13[day] != "" && NotesCurrent2.W13[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W13[day] + "<br/>";
@@ -894,14 +894,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W14) {
-      if (NotesCurrent2.W14[day] != "" && NotesCurrent2.W14[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W14[day] != "" && NotesCurrent2.W14[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W14[day].split("_")[0];
-        var link = NotesCurrent2.W14[day].split("_")[1];
+        var title = NotesCurrent2.W14[day].split("+")[0];
+        var link = NotesCurrent2.W14[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W14[day] != "" && NotesCurrent2.W14[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W14[day] != "" && NotesCurrent2.W14[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W14[day] + "<br/>";
@@ -924,14 +924,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W15) {
-      if (NotesCurrent2.W15[day] != "" && NotesCurrent2.W15[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W15[day] != "" && NotesCurrent2.W15[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W15[day].split("_")[0];
-        var link = NotesCurrent2.W15[day].split("_")[1];
+        var title = NotesCurrent2.W15[day].split("+")[0];
+        var link = NotesCurrent2.W15[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W15[day] != "" && NotesCurrent2.W15[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W15[day] != "" && NotesCurrent2.W15[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W15[day] + "<br/>";
@@ -954,14 +954,14 @@ function loadNotes() {
     $("#courseCurrent2-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent2.W16) {
-      if (NotesCurrent2.W16[day] != "" && NotesCurrent2.W16[day].indexOf("_") != -1) {
+      if (NotesCurrent2.W16[day] != "" && NotesCurrent2.W16[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
-        var title = NotesCurrent2.W16[day].split("_")[0];
-        var link = NotesCurrent2.W16[day].split("_")[1];
+        var title = NotesCurrent2.W16[day].split("+")[0];
+        var link = NotesCurrent2.W16[day].split("+")[1];
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
         document.getElementById("courseCurrent2-Notes").appendChild(newSpan);
-      } else if (NotesCurrent2.W16[day] != "" && NotesCurrent2.W16[day].indexOf("_") == -1) {
+      } else if (NotesCurrent2.W16[day] != "" && NotesCurrent2.W16[day].indexOf("+") == -1) {
         counter++;
         var newSpan = document.createElement('span');
         newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent2.W16[day] + "<br/>";
