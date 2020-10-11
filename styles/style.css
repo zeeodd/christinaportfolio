@@ -151,6 +151,23 @@ ABOUT STYLING
   flex-direction: row;
 }
 
+#node-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#node {
+  margin-right: 10px;
+}
+
+#statements {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 #photo {
   height: auto;
   width: 210px;
