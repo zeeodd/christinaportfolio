@@ -310,6 +310,14 @@ GLOBAL STYLING
 MOBILE STYLING
 ******************/
 
+@media only screen and (max-width: 1600px) {
+
+  #node-flex {
+    font-size: 0.75em;
+  }
+}
+
+
 @media only screen and (max-width: 1020px) {
 
   h2 {
@@ -404,5 +412,9 @@ MOBILE STYLING
 
   #pubs, #about, #contact {
     width: 100%;
+  }
+
+  #node-flex {
+    font-size: 1em;
   }
 }
