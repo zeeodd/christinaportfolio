@@ -153,10 +153,11 @@ ABOUT STYLING
 
 #node-flex {
   font-family: 'Raleway', sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 210px;
 }
 
 #node {
@@ -312,13 +313,58 @@ GLOBAL STYLING
 MOBILE STYLING
 ******************/
 
-@media only screen and (max-width: 1600px) {
-
-  #node-flex {
-    font-size: 0.75em;
+@media only screen and (max-width: 1800px) {
+  #row1 {
+    height: 475px;
   }
 }
 
+@media only screen and (max-width: 1600px) {
+
+  #node-flex {
+    font-size: 0.7em;
+  }
+
+  #row1 {
+    height: 525px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  #row1 {
+    height: 575px;
+  }
+}
+
+@media only screen and (max-width: 1375px) {
+  #row1 {
+    height: 675px;
+  }
+}
+
+@media only screen and (max-width: 1265px) {
+  #row1 {
+    height: 725px;
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+  #row1 {
+    height: 820px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  #row1 {
+    height: 920px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  #row1 {
+    height: 1020px;
+  }
+}
 
 @media only screen and (max-width: 1020px) {
 
@@ -397,6 +443,7 @@ MOBILE STYLING
 
   #row1 {
     flex-direction: column;
+    height: auto;
   }
 
   #row2 {
@@ -417,6 +464,6 @@ MOBILE STYLING
   }
 
   #node-flex {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
