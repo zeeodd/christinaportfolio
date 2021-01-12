@@ -7,12 +7,12 @@ function init() {
 }
 
 // ***** COURSE TABLE ***** //
-// Current 1 = MATH 129
+// Current 1 = DATA/MATH 363
 // Current 2 = MATH 475A
 
 var NotesCurrent1;
 var NotesCurrent2;
-const WEEKSCURRENT1 = 16;
+const WEEKSCURRENT1 = 17;
 const WEEKSCURRENT2= 16;
 
 function showInfo(data, tabletop) {
@@ -22,10 +22,10 @@ function showInfo(data, tabletop) {
   console.log(data);
 
   // Current Course 1
-  if (data["ANNOUNCEMENTS"].elements[0].Announcement129 == "None") {
+  if (data["ANNOUNCEMENTS"].elements[0].Announcement363 == "None") {
     $("#announcementBodyCurrent1").html("Nothing yet.");
   } else {
-    $("#announcementBodyCurrent1").html(String(data["ANNOUNCEMENTS"].elements[0].Announcement129));
+    $("#announcementBodyCurrent1").html(String(data["ANNOUNCEMENTS"].elements[0].Announcement363));
   }
 
   // Current Course 2
@@ -60,115 +60,122 @@ function showInfo(data, tabletop) {
   // ***** CURRNET COURSE 1 HOMEWORK CONTROLLER ***** //
 
   // Week 1 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W1_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W1_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W1_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W1_PDF == "") {
     $("#courseCurrent1-W1").html("Week 1");
   } else {
-    $("#courseCurrent1-W1").html("Week 1: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W1_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W1_Name) + '</a>');
+    $("#courseCurrent1-W1").html("Week 1: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W1_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W1_Name) + '</a>');
   }
 
   // Week 2 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W2_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W2_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W2_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W2_PDF == "") {
     $("#courseCurrent1-W2").html("Week 2");
   } else {
-    $("#courseCurrent1-W2").html("Week 2: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W2_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W2_Name) + '</a>');
+    $("#courseCurrent1-W2").html("Week 2: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W2_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W2_Name) + '</a>');
   }
 
   // Week 3 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W3_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W3_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W3_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W3_PDF == "") {
     $("#courseCurrent1-W3").html("Week 3");
   } else {
-    $("#courseCurrent1-W3").html("Week 3: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W3_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W3_Name) + '</a>');
+    $("#courseCurrent1-W3").html("Week 3: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W3_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W3_Name) + '</a>');
   }
 
   // Week 4 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W4_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W4_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W4_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W4_PDF == "") {
     $("#courseCurrent1-W4").html("Week 4");
   } else {
-    $("#courseCurrent1-W4").html("Week 4: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W4_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W4_Name) + '</a>');
+    $("#courseCurrent1-W4").html("Week 4: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W4_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W4_Name) + '</a>');
   }
 
   // Week 5 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W5_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W5_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W5_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W5_PDF == "") {
     $("#courseCurrent1-W5").html("Week 5");
   } else {
-    $("#courseCurrent1-W5").html("Week 5: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W5_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W5_Name) + '</a>');
+    $("#courseCurrent1-W5").html("Week 5: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W5_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W5_Name) + '</a>');
   }
 
   // Week 6 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W6_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W6_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W6_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W6_PDF == "") {
     $("#courseCurrent1-W6").html("Week 6");
   } else {
-    $("#courseCurrent1-W6").html("Week 6: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W6_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W6_Name) + '</a>');
+    $("#courseCurrent1-W6").html("Week 6: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W6_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W6_Name) + '</a>');
   }
 
   // Week 7 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W7_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W7_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W7_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W7_PDF == "") {
     $("#courseCurrent1-W7").html("Week 7");
   } else {
-    $("#courseCurrent1-W7").html("Week 7: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W7_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W7_Name) + '</a>');
+    $("#courseCurrent1-W7").html("Week 7: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W7_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W7_Name) + '</a>');
   }
 
   // Week 8 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W8_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W8_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W8_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W8_PDF == "") {
     $("#courseCurrent1-W8").html("Week 8");
   } else {
-    $("#courseCurrent1-W8").html("Week 8: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W8_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W8_Name) + '</a>');
+    $("#courseCurrent1-W8").html("Week 8: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W8_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W8_Name) + '</a>');
   }
 
   // Week 9 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W9_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W9_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W9_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W9_PDF == "") {
     $("#courseCurrent1-W9").html("Week 9");
   } else {
-    $("#courseCurrent1-W9").html("Week 9: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W9_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W9_Name) + '</a>');
+    $("#courseCurrent1-W9").html("Week 9: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W9_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W9_Name) + '</a>');
   }
 
   // Week 10 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W10_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W10_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W10_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W10_PDF == "") {
     $("#courseCurrent1-W10").html("Week 10");
   } else {
-    $("#courseCurrent1-W10").html("Week 10: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W10_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W10_Name) + '</a>');
+    $("#courseCurrent1-W10").html("Week 10: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W10_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W10_Name) + '</a>');
   }
 
   // Week 11 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W11_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W11_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W11_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W11_PDF == "") {
     $("#courseCurrent1-W11").html("Week 11");
   } else {
-    $("#courseCurrent1-W11").html("Week 11: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W11_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W11_Name) + '</a>');
+    $("#courseCurrent1-W11").html("Week 11: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W11_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W11_Name) + '</a>');
   }
 
   // Week 12 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W12_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W12_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W12_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W12_PDF == "") {
     $("#courseCurrent1-W12").html("Week 12");
   } else {
-    $("#courseCurrent1-W12").html("Week 12: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W12_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W12_Name) + '</a>');
+    $("#courseCurrent1-W12").html("Week 12: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W12_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W12_Name) + '</a>');
   }
 
   // Week 13 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W13_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W13_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W13_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W13_PDF == "") {
     $("#courseCurrent1-W13").html("Week 13");
   } else {
-    $("#courseCurrent1-W13").html("Week 13: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W13_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W13_Name) + '</a>');
+    $("#courseCurrent1-W13").html("Week 13: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W13_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W13_Name) + '</a>');
   }
 
   // Week 14 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W14_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W14_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W14_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W14_PDF == "") {
     $("#courseCurrent1-W14").html("Week 14");
   } else {
-    $("#courseCurrent1-W14").html("Week 14: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W14_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W14_Name) + '</a>');
+    $("#courseCurrent1-W14").html("Week 14: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W14_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W14_Name) + '</a>');
   }
 
   // Week 15 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W15_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W15_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W15_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W15_PDF == "") {
     $("#courseCurrent1-W15").html("Week 15");
   } else {
-    $("#courseCurrent1-W15").html("Week 15: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W15_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W15_Name) + '</a>');
+    $("#courseCurrent1-W15").html("Week 15: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W15_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W15_Name) + '</a>');
   }
 
   // Week 16 Homework
-  if (data["MATH 129 HOMEWORK"].elements[0].W16_Name == "" || data["MATH 129 HOMEWORK"].elements[0].W16_PDF == "") {
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W16_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W16_PDF == "") {
     $("#courseCurrent1-W16").html("Week 16");
   } else {
-    $("#courseCurrent1-W16").html("Week 16: " + '<a href=' + String(data["MATH 129 HOMEWORK"].elements[0].W16_PDF) + ' target="_blank">' + String(data["MATH 129 HOMEWORK"].elements[0].W16_Name) + '</a>');
+    $("#courseCurrent1-W16").html("Week 16: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W16_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W16_Name) + '</a>');
+  }
+
+  // Week 17 Homework
+  if (data["DATA/MATH 363 HOMEWORK"].elements[0].W17_Name == "" || data["DATA/MATH 363 HOMEWORK"].elements[0].W17_PDF == "") {
+    $("#courseCurrent1-W17").html("Week 17");
+  } else {
+    $("#courseCurrent1-W17").html("Week 17: " + '<a href=' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W17_PDF) + ' target="_blank">' + String(data["DATA/MATH 363 HOMEWORK"].elements[0].W17_Name) + '</a>');
   }
 
   // ***** CURRENT COURSE 2 HOMEWORK CONTROLLER ***** //
@@ -291,32 +298,32 @@ function showInfo(data, tabletop) {
   // (weeks without any notes yet), and if so, it creates
   // a template week so it doesn't return undefined
   for (var i = 0; i < WEEKSCURRENT1; i++) {
-    if (data["MATH 129 NOTES"].elements[i] == undefined) {
-      data["MATH 129 NOTES"].elements[i] = {
-        Monday: "",
-        Wednesday: "",
-        Friday: ""
+    if (data["DATA/MATH 363 NOTES"].elements[i] == undefined) {
+      data["DATA/MATH 363 NOTES"].elements[i] = {
+        Tuesday: "",
+        Thursday: ""
       }
     }
   }
 
   var NotesCurrent1Callback = {
-    W1: data["MATH 129 NOTES"].elements[0],
-    W2: data["MATH 129 NOTES"].elements[1],
-    W3: data["MATH 129 NOTES"].elements[2],
-    W4: data["MATH 129 NOTES"].elements[3],
-    W5: data["MATH 129 NOTES"].elements[4],
-    W6: data["MATH 129 NOTES"].elements[5],
-    W7: data["MATH 129 NOTES"].elements[6],
-    W8: data["MATH 129 NOTES"].elements[7],
-    W9: data["MATH 129 NOTES"].elements[8],
-    W10: data["MATH 129 NOTES"].elements[9],
-    W11: data["MATH 129 NOTES"].elements[10],
-    W12: data["MATH 129 NOTES"].elements[11],
-    W13: data["MATH 129 NOTES"].elements[12],
-    W14: data["MATH 129 NOTES"].elements[13],
-    W15: data["MATH 129 NOTES"].elements[14],
-    W16: data["MATH 129 NOTES"].elements[15]
+    W1: data["DATA/MATH 363 NOTES"].elements[0],
+    W2: data["DATA/MATH 363 NOTES"].elements[1],
+    W3: data["DATA/MATH 363 NOTES"].elements[2],
+    W4: data["DATA/MATH 363 NOTES"].elements[3],
+    W5: data["DATA/MATH 363 NOTES"].elements[4],
+    W6: data["DATA/MATH 363 NOTES"].elements[5],
+    W7: data["DATA/MATH 363 NOTES"].elements[6],
+    W8: data["DATA/MATH 363 NOTES"].elements[7],
+    W9: data["DATA/MATH 363 NOTES"].elements[8],
+    W10: data["DATA/MATH 363 NOTES"].elements[9],
+    W11: data["DATA/MATH 363 NOTES"].elements[10],
+    W12: data["DATA/MATH 363 NOTES"].elements[11],
+    W13: data["DATA/MATH 363 NOTES"].elements[12],
+    W14: data["DATA/MATH 363 NOTES"].elements[13],
+    W15: data["DATA/MATH 363 NOTES"].elements[14],
+    W16: data["DATA/MATH 363 NOTES"].elements[15],
+    W17: data["DATA/MATH 363 NOTES"].elements[16]
   }
 
   NotesCurrent1 = NotesCurrent1Callback;
