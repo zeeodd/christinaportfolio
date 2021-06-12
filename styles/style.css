@@ -187,6 +187,22 @@ ABOUT STYLING
   max-height:100%;
 }
 
+#cv {
+  color: #1B61A5;
+}
+
+#teaching-statement {
+  color: #FD6910;
+}
+
+#research-statement {
+  color: #269321;
+}
+
+#diversity-statement {
+  color: #CA111E;
+}
+
 /******************
 PUBLICATIONS STYLING
 ******************/
@@ -319,7 +335,6 @@ GLOBAL STYLING
 
 .links line {
   stroke: #999;
-  stroke-opacity: 0.6;
 }
 
 .nodes circle {
@@ -363,37 +378,37 @@ MOBILE STYLING
 
 @media only screen and (max-width: 1500px) {
   #row1 {
-    height: 575px;
+    height: 475px;
   }
 }
 
 @media only screen and (max-width: 1375px) {
   #row1 {
-    height: 675px;
+    height: 525px;
   }
 }
 
 @media only screen and (max-width: 1265px) {
   #row1 {
-    height: 725px;
+    height: 525px;
   }
 }
 
 @media only screen and (max-width: 1215px) {
   #row1 {
-    height: 820px;
+    height: 600px;
   }
 }
 
 @media only screen and (max-width: 1130px) {
   #row1 {
-    height: 920px;
+    height: 620px;
   }
 }
 
 @media only screen and (max-width: 1080px) {
   #row1 {
-    height: 1020px;
+    height: 680px;
   }
 }
 
