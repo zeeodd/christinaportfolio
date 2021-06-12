@@ -14,12 +14,13 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Christina Durón</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="styles/style.min.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/style.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/pi.png">
     <link rel="apple-touch-icon" href="images/pi.png">
     <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
   </head>
 
   <body>
@@ -42,20 +43,21 @@
           <div id="bioBlock">
             <div class="noselect"><image id="photo" src="images/id2.png"/></div>
             <p id="bio">
-            Currently, I am a postdoctoral researcher in the Department of Mathematics at the University of Arizona, though broadly, I would describe myself as an educator and applied mathematician. Teaching mathematics is my passion and I am continually striving to become a more effective teacher by applying new tools and skills to motivate students both inside and outside of the classroom. My research focus lies in network theory and network analysis where, specifically, I work on the development of new computational techniques to model, analyze, and explore relational data. To learn more about my work, along with my teaching philosophy, research background, and diversity stance, please check out my <b><a href="pdfs/duron_cv.pdf" target="_blank">CV</a></b> and statements below.
+            Currently, I am a postdoctoral researcher in the Department of Mathematics at the University of Arizona, though broadly, I would describe myself as an educator and applied mathematician. Teaching mathematics is my passion and I am continually striving to become a more effective teacher by applying new tools and skills to motivate students both inside and outside of the classroom. My research focus lies in network theory and network analysis where, specifically, I work on the development of new computational techniques to model, analyze, and explore relational data. To learn more about my work, along with my teaching philosophy, research background, and diversity stance, please hover over the nodes on the graph!
             </br>
             </br>
             </p>
           </div>
           <div id="node-flex">
-            <img id="node" src="images/nodes.png" height="60">
+            <svg width="175" height="175"></svg>
+            <!-- <img id="node" src="images/nodes.png" height="60">
             <div>
               <a href="pdfs/Teaching_Statement.pdf" target="_blank">Teaching Statement</a>
               </br>
               <a href="pdfs/Research_Statement.pdf" target="_blank">Research Statement</a>
               </br>
               <a href="pdfs/Diversity_Statement.pdf" target="_blank>">Diversity Statement</a>
-            </div>
+            </div> -->
           </div>
         </div>
         <div id="contact">
@@ -284,6 +286,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
     <script src="scripts/tabletop.min.js"></script>
     <script src="scripts/notes-controller.min.js"></script>
+    <script src="scripts/graph.js"></script>
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;
