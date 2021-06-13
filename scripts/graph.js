@@ -61,6 +61,12 @@ d3.json("scripts/graph.json", function(error, graph) {
           .on("click",function(d){
             window.open(d.url, '_blank');
             d3.select(window).on("click", function() { zoom(root); });
+            div.transition()
+                .duration(100)
+                .style("opacity", 0)
+                .style("display", "none");
+            d3.select(this).style("cursor", "normal");
+            d3.select(this).attr("r", 10);
           });
 
   node.append("title")
