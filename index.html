@@ -113,8 +113,7 @@
         <h2 id="courseInfoTitle"><b>Current Course Information (Loading...)</b></h2>
         <hr>
         <!-- COURSE 1 -->
-        <!--
-        <button class="collapsible">DATA/MATH 363: Introduction to Statistical Methods</button>
+        <button class="collapsible">MATH 464: Theory of Probability</button>
         <div id="courseCurrent1-Content" class="courseContent">
           <p>
             <b id="announcementHeaderCurrent1" class="announcementText">Announcements</b>
@@ -124,47 +123,50 @@
             <br/>
             <b>Course Overview</b>
             <br/>
-            DATA/MATH 363 will be using your background in the natural or social sciences, the humanities, or engineering and your previous knowledge of algebra, calculus and linear algebra to consider the issues of collection, model derivation and analysis, interpretation, explanation, and presentation of data. The objective of this course is to take advantage of the coherent body of knowledge provided by statistical theory having an eye consistently on the application of the subject. This approach will allow you to extend your ability to use methods in data science beyond those given in the course.
+            MATH 464 provides an introduction to the theory of probability, the
+            part of mathematics that studies random phenomena. We model simple
+            random experiments mathematically and learn techniques for studying
+            these models. Topics covered include probability spaces, random
+            variables, weak law of large numbers, central limit theorem, various
+            discrete and continuous probability distributions.
             <br/>
             <br/>
-            <a href="pdfs/DataMath_363_Syllabus.pdf" target="_blank>">Syllabus</a> | <a href="pdfs/datamath363/01_Normal-dist.pdf" target="_blank">Normal Dist</a> | <a href="pdfs/datamath363/02_T-dist.pdf" target="_blank">Student's t Dist</a> | <a href="pdfs/datamath363/03_F-dist.pdf" target="_blank">F Dist</a> | <a href="pdfs/datamath363/04_ChiSquare-dist.pdf" target="_blank">Chi-Squared Dist</a>
+            <a href="pdfs/math464/Math464_Syllabus.pdf" target="_blank>">Syllabus</a>
             <br/>
             <br/>
             <b>Assignments</b>
             <br/>
-            <span id="courseCurrent1-W1" tooltip="Jan 11 – Jan 15">Week 1</span>
+            <span id="courseCurrent1-W1" tooltip="Aug 23 – Aug 27">Week 1</span>
             <br/>
-            <span id="courseCurrent1-W2" tooltip="Jan 18 – Jan 22">Week 2</span>
+            <span id="courseCurrent1-W2" tooltip="Aug 30 – Sep 3">Week 2</span>
             <br/>
-            <span id="courseCurrent1-W3" tooltip="Jan 25 – Jan 29">Week 3</span>
+            <span id="courseCurrent1-W3" tooltip="Sep 6 – Sep 10">Week 3</span>
             <br/>
-            <span id="courseCurrent1-W4" tooltip="Feb 1 – Feb 5">Week 4</span>
+            <span id="courseCurrent1-W4" tooltip="Sep 13 – Sep 17">Week 4</span>
             <br/>
-            <span id="courseCurrent1-W5" tooltip="Feb 8 – Feb 12">Week 5</span>
+            <span id="courseCurrent1-W5" tooltip="Sep 20 – Sep 24">Week 5</span>
             <br/>
-            <span id="courseCurrent1-W6" tooltip="Feb 15 – Feb 19">Week 6</span>
+            <span id="courseCurrent1-W6" tooltip="Sep 27 – Oct 1">Week 6</span>
             <br/>
-            <span id="courseCurrent1-W7" tooltip="Feb 22 – Feb 26">Week 7</span>
+            <span id="courseCurrent1-W7" tooltip="Oct 4 – Oct 8">Week 7</span>
             <br/>
-            <span id="courseCurrent1-W8" tooltip="Mar 1 – Mar 5">Week 8</span>
+            <span id="courseCurrent1-W8" tooltip="Oct 11 – Oct 15">Week 8</span>
             <br/>
-            <span id="courseCurrent1-W9" tooltip="Mar 8 – Mar 12">Week 9</span>
+            <span id="courseCurrent1-W9" tooltip="Oct 18 – Oct 22">Week 9</span>
             <br/>
-            <span id="courseCurrent1-W10" tooltip="Mar 15 – Mar 19">Week 10</span>
+            <span id="courseCurrent1-W10" tooltip="Oct 25 – Oct 29">Week 10</span>
             <br/>
-            <span id="courseCurrent1-W11" tooltip="Mar 22 – Mar 26">Week 11</span>
+            <span id="courseCurrent1-W11" tooltip="Nov 1 – Nov 5">Week 11</span>
             <br/>
-            <span id="courseCurrent1-W12" tooltip="Mar 29 – Apr 2">Week 12</span>
+            <span id="courseCurrent1-W12" tooltip="Nov 8 – Nov 12">Week 12</span>
             <br/>
-            <span id="courseCurrent1-W13" tooltip="Apr 5 – Apr 9">Week 13</span>
+            <span id="courseCurrent1-W13" tooltip="Nov 15 – Nov 19">Week 13</span>
             <br/>
-            <span id="courseCurrent1-W14" tooltip="Apr 12 – Apr 16">Week 14</span>
+            <span id="courseCurrent1-W14" tooltip="Nov 22 – Nov 26">Week 14</span>
             <br/>
-            <span id="courseCurrent1-W15" tooltip="Apr 19 - Apr 23">Week 15</span>
+            <span id="courseCurrent1-W15" tooltip="Nov 29 - Dec 3">Week 15</span>
             <br/>
-            <span id="courseCurrent1-W16" tooltip="Apr 26 – Apr 30">Week 16</span>
-            <br/>
-            <span id="courseCurrent1-W17" tooltip="May 3 – May 7">Week 17</span>
+            <span id="courseCurrent1-W16" tooltip="Dec 6 – Dec 10">Week 16</span>
             <br/>
             <br/>
             <b>Lecture Slides</b>
@@ -193,9 +195,9 @@
             <span id="courseCurrent1-Notes"></span>
           </p>
         </div>
-        -->
         <!-- PAST COURSES -->
-        <h2 id="courseInfoTitleFall"><b>Past Courses (Loading...)</b></h2>
+        <h2 id="courseInfoTitleFall"><b>Past Courses (Loading...)</b></h2><button id="toggleBtn" onclick="TogglePastCourses()">SHOW</button>
+        <div id="allPastCourses">
         <hr>
         <span class="dateSpan">Spring 2021 – University of Arizona</span>
         <br/>
@@ -273,6 +275,7 @@
           </p>
         </div>
       </div>
+      </div>
       <div class="below-rows" id="row3">
         <h2 id="calendarTitle"><b>Course Calendar</b></h2>
         <hr>
@@ -284,8 +287,9 @@
     </div>
     <footer id="footer" class="noselect">Copyright © Christina Durón 2021</footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-    <script src="scripts/tabletop.min.js"></script>
-    <script src="scripts/notes-controller.min.js"></script>
+    <script src='scripts/papaparse.min.js'></script>
+    <script src="scripts/tabletop.js"></script>
+    <script src="scripts/notes-controller.js"></script>
     <script src="scripts/graph.js"></script>
     <script>
       var coll = document.getElementsByClassName("collapsible");
@@ -302,6 +306,20 @@
             content.style.maxHeight = content.scrollHeight + "px";
           }
         });
+      }
+
+      function TogglePastCourses() {
+        var block = document.getElementById("allPastCourses");
+        var btn = document.getElementById("toggleBtn");
+        console.log(block.style.display);
+        if (block.style.display == "block") {
+          block.style.display = "none";
+          btn.innerHTML = "SHOW";
+        }
+        else {
+          block.style.display = "block";
+          btn.innerHTML = "HIDE";
+        }
       }
 
     </script>

@@ -203,6 +203,26 @@ ABOUT STYLING
   color: #CA111E;
 }
 
+#allPastCourses {
+  display: none;
+}
+
+#toggleBtn {
+  font-family: 'Playfair Display', serif;
+  padding: 10px;
+  margin: 0px;
+  background-color: #404040;
+  color: white;
+  border: none;
+  transition: 0.35s;
+}
+
+#toggleBtn:hover {
+  cursor: pointer;
+  background-color: #383838;
+  transition: 0.35s;
+  margin-left: 5px;
+}
 /******************
 PUBLICATIONS STYLING
 ******************/
