@@ -181,8 +181,9 @@ ABOUT STYLING
 
 #photo {
   height: auto;
-  width: 210px;
+  width: 190px;
   background-color: lightblue;
+  box-shadow: 0px 0px 2px black;
   max-width:100%;
   max-height:100%;
 }
