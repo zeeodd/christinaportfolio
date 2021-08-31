@@ -24,7 +24,6 @@ function showInfo(data) {
 
   if (debug) {
     console.log(data);
-    console.log(data[0]["Announcement646"]);
   }
 
   // Current Course 1
@@ -38,11 +37,14 @@ function showInfo(data) {
   // ***** CURRNET COURSE 1 HOMEWORK CONTROLLER ***** //
 
   // Week 1 Homework
-  if (data[0]["MATH464_HW_Name"] == "" || data[0]["MATH464_HW_PDF"] == "") {
-    $("#courseCurrent1-W1").html("Week 1");
-  } else {
-    $("#courseCurrent1-W1").html("Week 1: " + '<a href=' + String(data[0]["MATH464_HW_PDF"]) + ' target="_blank">' + String(data[0]["MATH464_HW_Name"]) + '</a>');
-  }
+  for (var i = 0; i < WEEKSCURRENT1; i++) {
+      if (data[i]["MATH464_HW_Name"] == "" || data[i]["MATH464_HW_PDF"] == "") {
+        $("#courseCurrent1" + "-W" + String(i+1)).html("Week " + String(i+1));
+      } else {
+        console.log(data[i]["MATH464_HW_PDF"]);
+        $("#courseCurrent1" + "-W" + String(i+1)).html("Week " + String(i+1) + ": " + '<a href=' + String(data[i]["MATH464_HW_PDF"]) + ' target="_blank">' + String(data[i]["MATH464_HW_Name"]) + '</a>');
+      }
+    }
 
   // ***** CURRENT COURSE 1 HOMEWORK NOTES MANAGER ***** //
   var NotesCurrent1Callback = {
@@ -95,7 +97,7 @@ function showInfo(data) {
 
   // ***** ONCE DONE, CALL THE LOADED FUNCTION ***** //
 
-  loadedTabletop();
+  loadNotes();
 
 };
 

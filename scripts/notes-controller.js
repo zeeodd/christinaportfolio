@@ -1,7 +1,6 @@
 function loadedTabletop() {
   $("#courseInfoTitle").html("<b>Current Course Information</b>");
   $("#courseInfoTitleFall").html("<b>Past Courses</b>");
-  loadNotes();
 }
 
 function loadNotes() {
