@@ -97,6 +97,12 @@ HEADER STYLING
 CONTENT STYLING
 ******************/
 
+#piano-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 4em;
+}
+
 #content {
   width: 100%;
   padding-top: 20px;
@@ -342,6 +348,10 @@ COURSES STYLING
 /******************
 GLOBAL STYLING
 ******************/
+
+.piano-keys-text {
+  font-family: 'Playfair Display', serif;
+}
 
 .noselect {
   -webkit-touch-callout: none;

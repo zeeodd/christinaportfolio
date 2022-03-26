@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pianogramApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Piano</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
+  <link href="styles/style.min.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" href="images/pi.png">
+  <link rel="apple-touch-icon" href="images/pi.png">
+</head>
+
+<body ng-controller="pianoCtrl as piano">
+  <div class="container">
+
+    <!-- header -->
+    <header>
+      <h1 id="piano-title"><i class="fa fa-music"></i> Piano</h1>
+    </header>
+    <hr/>
+
+    <!-- main -->
+    <div class="main" id="main">
+       <!-- pianogram -->
+        <pianogram data="piano.data"></pianogram>
+    </div>
+  </div>
+
+  <!-- scripts -->
+  <script src="http://code.angularjs.org/1.3.5/angular.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/pianogram.js"></script>
+  <script src="scripts/music.js"></script>
+  <script type="text/javascript">
+    // Hack to make this example display correctly in an iframe on bl.ocks.org
+    d3.select(self.frameElement).style("height", "1000px");
+  </script>
+</body>
+
+</html>
