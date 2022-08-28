@@ -1,5 +1,5 @@
 var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRqqiiJKWDSu9SVghfGJZPfZoMLsf2aw8tYFCYtfKf0IuWJXwMJlutxCHD5ByqcGQEtplyZwT2jaH-x/pub?output=csv';
-var debug = true;
+var debug = false;
 
 function init() {
   Papa.parse(publicSpreadsheetUrl, {
@@ -22,9 +22,7 @@ function showInfo(data) {
 
   // ***** ANNOUNCEMENTS CONTROLLER ***** //
 
-  if (debug) {
-    console.log(data);
-  }
+  if (debug) console.log(data);
 
   // Current Course 1
   var course1Announcement = data[0]["Announcement150"];
@@ -38,11 +36,12 @@ function showInfo(data) {
 
   // Week 1 Homework
   for (var i = 0; i < WEEKSCURRENT1; i++) {
-      if (data[i]["MATH464_HW_Name"] == "" || data[i]["MATH464_HW_PDF"] == "") {
+      if (data[i]["MATH150_HW_Name"] == "" || data[i]["MATH150_HW_PDF"] == "") {
         $("#courseCurrent1" + "-W" + String(i+1)).html("Week " + String(i+1));
+        // $("#courseCurrent1" + "-W" + String(i+1)).hide();
       } else {
-        console.log(data[i]["MATH464_HW_PDF"]);
-        $("#courseCurrent1" + "-W" + String(i+1)).html("Week " + String(i+1) + ": " + '<a href=' + String(data[i]["MATH464_HW_PDF"]) + ' target="_blank">' + String(data[i]["MATH464_HW_Name"]) + '</a>');
+        if (debug) console.log(data[i]["MATH150_HW_PDF"]);
+        $("#courseCurrent1" + "-W" + String(i+1)).html("Week " + String(i+1) + ": " + '<a href=' + String(data[i]["MATH150_HW_PDF"]) + ' target="_blank">' + String(data[i]["MATH150_HW_Name"]) + '</a>');
       }
     }
 
@@ -63,7 +62,6 @@ function showInfo(data) {
     W13: "",
     W14: "",
     W15: "",
-    W16: ""
   }
 
   // This for loop checks if there are any undefined weeks
@@ -71,9 +69,10 @@ function showInfo(data) {
   // a template week so it doesn't return undefined
   for (var i = 0; i < WEEKSCURRENT1; i++) {
     var tempWeek = {
-      Monday: data[i]["MATH464_Notes_M"],
-      Wednesday: data[i]["MATH464_Notes_W"],
-      Friday: data[i]["MATH464_Notes_F"]
+      Monday: data[i]["MATH150_Notes_M"],
+      Tuesday: data[i]["MATH150_Notes_T"],
+      Thursday: data[i]["MATH150_Notes_TH"],
+      Friday: data[i]["MATH150_Notes_F"]
     }
     if (i == 0) NotesCurrent1Callback.W1 = tempWeek;
     else if (i == 1) NotesCurrent1Callback.W2 = tempWeek;
@@ -90,7 +89,6 @@ function showInfo(data) {
     else if (i == 12) NotesCurrent1Callback.W13 = tempWeek;
     else if (i == 13) NotesCurrent1Callback.W14 = tempWeek;
     else if (i == 14) NotesCurrent1Callback.W15 = tempWeek;
-    else if (i == 15) NotesCurrent1Callback.W16 = tempWeek;
   }
 
   NotesCurrent1 = NotesCurrent1Callback;

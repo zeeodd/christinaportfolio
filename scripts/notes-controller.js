@@ -17,8 +17,6 @@ function loadNotes() {
     var variableHeight = 25;
   }
 
-  if (debug) console.log("Current 1: ", NotesCurrent1);
-
   // ***** CURRENT COURSE 1 NOTES CONTROLLER ***** //
 
   // WEEK 1
@@ -26,8 +24,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W1) {
-      console.log(NotesCurrent1.W1);
-      console.log(NotesCurrent1.W1[day]);
+      if (debug) console.log(NotesCurrent1.W1);
+      if (debug) console.log(NotesCurrent1.W1[day]);
       if (NotesCurrent1.W1[day] != "" && NotesCurrent1.W1[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -48,7 +46,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter);
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 1
@@ -58,8 +56,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W2) {
-      console.log(NotesCurrent1.W2);
-      console.log(NotesCurrent1.W2[day]);
+      if (debug) console.log(NotesCurrent1.W2);
+      if (debug) console.log(NotesCurrent1.W2[day]);
       if (NotesCurrent1.W2[day] != "" && NotesCurrent1.W2[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -80,7 +78,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 2
@@ -90,8 +88,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W3) {
-      console.log(NotesCurrent1.W3);
-      console.log(NotesCurrent1.W3[day]);
+      if (debug) console.log(NotesCurrent1.W3);
+      if (debug) console.log(NotesCurrent1.W3[day]);
       if (NotesCurrent1.W3[day] != "" && NotesCurrent1.W3[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -112,7 +110,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 3
@@ -122,8 +120,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W4) {
-      console.log(NotesCurrent1.W4);
-      console.log(NotesCurrent1.W4[day]);
+      if (debug) console.log(NotesCurrent1.W4);
+      if (debug) console.log(NotesCurrent1.W4[day]);
       if (NotesCurrent1.W4[day] != "" && NotesCurrent1.W4[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -144,7 +142,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 4
@@ -154,8 +152,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W5) {
-      console.log(NotesCurrent1.W5);
-      console.log(NotesCurrent1.W5[day]);
+      if (debug) console.log(NotesCurrent1.W5);
+      if (debug) console.log(NotesCurrent1.W5[day]);
       if (NotesCurrent1.W5[day] != "" && NotesCurrent1.W5[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -176,7 +174,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 5
@@ -186,8 +184,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W6) {
-      console.log(NotesCurrent1.W6);
-      console.log(NotesCurrent1.W6[day]);
+      if (debug) console.log(NotesCurrent1.W6);
+      if (debug) console.log(NotesCurrent1.W6[day]);
       if (NotesCurrent1.W6[day] != "" && NotesCurrent1.W6[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -208,7 +206,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 6
@@ -218,8 +216,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W7) {
-      console.log(NotesCurrent1.W7);
-      console.log(NotesCurrent1.W7[day]);
+      if (debug) console.log(NotesCurrent1.W7);
+      if (debug) console.log(NotesCurrent1.W7[day]);
       if (NotesCurrent1.W7[day] != "" && NotesCurrent1.W7[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -240,7 +238,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 7
@@ -250,8 +248,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W8) {
-      console.log(NotesCurrent1.W8);
-      console.log(NotesCurrent1.W8[day]);
+      if (debug) console.log(NotesCurrent1.W8);
+      if (debug) console.log(NotesCurrent1.W8[day]);
       if (NotesCurrent1.W8[day] != "" && NotesCurrent1.W8[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -272,7 +270,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 8
@@ -282,8 +280,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W9) {
-      console.log(NotesCurrent1.W9);
-      console.log(NotesCurrent1.W9[day]);
+      if (debug) console.log(NotesCurrent1.W9);
+      if (debug) console.log(NotesCurrent1.W9[day]);
       if (NotesCurrent1.W9[day] != "" && NotesCurrent1.W9[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -304,7 +302,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 9
@@ -314,8 +312,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W10) {
-      console.log(NotesCurrent1.W10);
-      console.log(NotesCurrent1.W10[day]);
+      if (debug) console.log(NotesCurrent1.W10);
+      if (debug) console.log(NotesCurrent1.W10[day]);
       if (NotesCurrent1.W10[day] != "" && NotesCurrent1.W10[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -336,7 +334,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 10
@@ -346,8 +344,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W11) {
-      console.log(NotesCurrent1.W11);
-      console.log(NotesCurrent1.W11[day]);
+      if (debug) console.log(NotesCurrent1.W11);
+      if (debug) console.log(NotesCurrent1.W11[day]);
       if (NotesCurrent1.W11[day] != "" && NotesCurrent1.W11[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -368,7 +366,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 11
@@ -378,8 +376,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W12) {
-      console.log(NotesCurrent1.W12);
-      console.log(NotesCurrent1.W12[day]);
+      if (debug) console.log(NotesCurrent1.W12);
+      if (debug) console.log(NotesCurrent1.W12[day]);
       if (NotesCurrent1.W12[day] != "" && NotesCurrent1.W12[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -400,7 +398,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 12
@@ -410,8 +408,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W13) {
-      console.log(NotesCurrent1.W13);
-      console.log(NotesCurrent1.W13[day]);
+      if (debug) console.log(NotesCurrent1.W13);
+      if (debug) console.log(NotesCurrent1.W13[day]);
       if (NotesCurrent1.W13[day] != "" && NotesCurrent1.W13[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -432,7 +430,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 13
@@ -442,8 +440,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W14) {
-      console.log(NotesCurrent1.W14);
-      console.log(NotesCurrent1.W14[day]);
+      if (debug) console.log(NotesCurrent1.W14);
+      if (debug) console.log(NotesCurrent1.W14[day]);
       if (NotesCurrent1.W14[day] != "" && NotesCurrent1.W14[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -464,7 +462,7 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 14
@@ -474,8 +472,8 @@ function loadNotes() {
     $("#courseCurrent1-Notes").html(""); // clear current html
     var counter = 0;
     for (var day in NotesCurrent1.W15) {
-      console.log(NotesCurrent1.W15);
-      console.log(NotesCurrent1.W15[day]);
+      if (debug) console.log(NotesCurrent1.W15);
+      if (debug) console.log(NotesCurrent1.W15[day]);
       if (NotesCurrent1.W15[day] != "" && NotesCurrent1.W15[day].indexOf("+") != -1) {
         counter++;
         var newSpan = document.createElement('span');
@@ -496,42 +494,44 @@ function loadNotes() {
       newSpan.innerHTML = "Nothing yet.";
       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
     } else {
-      console.log(counter)
+      if (debug) console.log(counter)
       document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
     }
   } //  END WEEK 15
+  //
+  // // WEEK 16
+  // if (document.getElementById("courseCurrent1-Selector").selectedIndex == 16) {
+  //   $("#courseCurrent1-Notes").html(""); // clear current html
+  //   var counter = 0;
+  //   for (var day in NotesCurrent1.W16) {
+  //     if (debug) console.log(NotesCurrent1.W16);
+  //     if (debug) console.log(NotesCurrent1.W16[day]);
+  //     if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("+") != -1) {
+  //       counter++;
+  //       var newSpan = document.createElement('span');
+  //       var title = NotesCurrent1.W16[day].split("+")[0];
+  //       var link = NotesCurrent1.W16[day].split("+")[1];
+  //       newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
+  //       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+  //     } else if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("+") == -1) {
+  //       counter++;
+  //       var newSpan = document.createElement('span');
+  //       newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W16[day] + "<br/>";
+  //       document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+  //     }
+  //   } // END for-loop
+  //   if (counter == 0) {
+  //     document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight) + "px";
+  //     var newSpan = document.createElement('span');
+  //     newSpan.innerHTML = "Nothing yet.";
+  //     document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
+  //   } else {
+  //     if (debug) console.log(counter)
+  //     document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
+  //   }
+  // } //  END WEEK 16
 
-  // WEEK 16
-  if (document.getElementById("courseCurrent1-Selector").selectedIndex == 16) {
-    $("#courseCurrent1-Notes").html(""); // clear current html
-    var counter = 0;
-    for (var day in NotesCurrent1.W16) {
-      console.log(NotesCurrent1.W16);
-      console.log(NotesCurrent1.W16[day]);
-      if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("+") != -1) {
-        counter++;
-        var newSpan = document.createElement('span');
-        var title = NotesCurrent1.W16[day].split("+")[0];
-        var link = NotesCurrent1.W16[day].split("+")[1];
-        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + '<a href=' + String(link) + ' target="_blank">' + String(title) + '</a>' + "<br/>";
-        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      } else if (NotesCurrent1.W16[day] != "" && NotesCurrent1.W16[day].indexOf("+") == -1) {
-        counter++;
-        var newSpan = document.createElement('span');
-        newSpan.innerHTML = "<b>" + String(day) + "</b>" + ": " + NotesCurrent1.W16[day] + "<br/>";
-        document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-      }
-    } // END for-loop
-    if (counter == 0) {
-      document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight) + "px";
-      var newSpan = document.createElement('span');
-      newSpan.innerHTML = "Nothing yet.";
-      document.getElementById("courseCurrent1-Notes").appendChild(newSpan);
-    } else {
-      console.log(counter)
-      document.getElementById("courseCurrent1-Content").style.maxHeight = String(defaultHeightC + variableHeight*counter) + "px";
-    }
-  } //  END WEEK 16
+  if (debug) console.log("Current 1: ", NotesCurrent1);
 
   loadedTabletop();
 
