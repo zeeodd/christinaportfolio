@@ -16,7 +16,7 @@ function init() {
 // Current 1 = MATH 646
 
 var NotesCurrent1;
-const WEEKSCURRENT1 = 16;
+const WEEKSCURRENT1 = 15;
 
 function showInfo(data) {
 
@@ -27,7 +27,7 @@ function showInfo(data) {
   }
 
   // Current Course 1
-  var course1Announcement = data[0]["Announcement646"];
+  var course1Announcement = data[0]["Announcement150"];
   if (course1Announcement == "None") {
     $("#announcementBodyCurrent1").html("Nothing yet.");
   } else {
