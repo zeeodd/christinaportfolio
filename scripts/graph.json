@@ -8,21 +8,21 @@
     },
     {
       "id": 2,
-      "name": "<b>Teaching </br> Statement</b>",
+      "name": "<b>CV</b>",
       "color": "2",
-      "url": "pdfs/Teaching_Statement.pdf"
+      "url": "pdfs/duron_cv.pdf"
     },
     {
       "id": 3,
-      "name": "<b>Research </br> Statement</b>",
+      "name": "<b>CV</b>",
       "color": "3",
-      "url": "pdfs/Research_Statement.pdf"
+      "url": "pdfs/duron_cv.pdf"
     },
     {
       "id": 4,
-      "name": "<b>Diversity </br> Statement</b>",
+      "name": "<b>CV</b>",
       "color": "4",
-      "url": "pdfs/Diversity_Statement.pdf"
+      "url": "pdfs/duron_cv.pdf"
     }
   ],
   "links": [
