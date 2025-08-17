@@ -1,5 +1,5 @@
 var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRqqiiJKWDSu9SVghfGJZPfZoMLsf2aw8tYFCYtfKf0IuWJXwMJlutxCHD5ByqcGQEtplyZwT2jaH-x/pub?output=csv';
-var debug = false;
+var debug = true;
 
 function init() {
   Papa.parse(publicSpreadsheetUrl, {
@@ -14,7 +14,7 @@ function init() {
 
 // ***** COURSE TABLE ***** //
 // Current 1 = MATH 150
-// Current 2 = MATH 260
+// Current 2 = MATH 350
 
 var NotesCurrent1;
 const WEEKSCURRENT1 = 17;
@@ -37,7 +37,7 @@ function showInfo(data) {
   }
 
   // Current Course 2
-  var course1Announcement = data[0]["Announcement260"];
+  var course1Announcement = data[0]["Announcement350"];
   if (course1Announcement == "None") {
     $("#announcementBodyCurrent2").html("Nothing yet.");
   } else {
@@ -113,11 +113,11 @@ function showInfo(data) {
 
   // Weekly Homework
   for (var i = 0; i < WEEKSCURRENT2; i++) {
-      if (data[i]["MATH260FA_HW_Name"] == "" || data[i]["MATH260FA_HW_PDF"] == "") {
+      if (data[i]["MATH350FA_HW_Name"] == "" || data[i]["MATH350FA_HW_PDF"] == "") {
         $("#courseCurrent2" + "-W" + String(i+1)).html("Week " + String(i+1));
       } else {
-        if (debug) console.log(data[i]["MATH260FA_HW_PDF"]);
-        $("#courseCurrent2" + "-W" + String(i+1)).html("Week " + String(i+1) + ": " + '<a href=' + String(data[i]["MATH260FA_HW_PDF"]) + ' target="_blank">' + String(data[i]["MATH260FA_HW_Name"]) + '</a>');
+        if (debug) console.log(data[i]["MATH350FA_HW_PDF"]);
+        $("#courseCurrent2" + "-W" + String(i+1)).html("Week " + String(i+1) + ": " + '<a href=' + String(data[i]["MATH350FA_HW_PDF"]) + ' target="_blank">' + String(data[i]["MATH350FA_HW_Name"]) + '</a>');
       }
     }
 
@@ -147,10 +147,8 @@ function showInfo(data) {
   // a template week so it doesn't return undefined
   for (var i = 0; i < WEEKSCURRENT2; i++) {
     var tempWeek = {
-      Monday: data[i]["MATH260FA_Notes_M"],
-      Tuesday: data[i]["MATH260FA_Notes_T"],
-      Thursday: data[i]["MATH260FA_Notes_TH"],
-      Friday: data[i]["MATH260FA_Notes_F"]
+      Tuesday: data[i]["MATH350FA_Notes_T"],
+      Friday: data[i]["MATH350FA_Notes_F"]
     }
     if (i == 0) NotesCurrent2Callback.W1 = tempWeek;
     else if (i == 1) NotesCurrent2Callback.W2 = tempWeek;
